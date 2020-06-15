@@ -1,7 +1,322 @@
 {
   "version": 1,
-  "projects": {},
+  "projects": {
+    "shop": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/shop",
+      "sourceRoot": "apps/shop/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/shop",
+            "index": "apps/shop/src/index.html",
+            "main": "apps/shop/src/main.ts",
+            "polyfills": "apps/shop/src/polyfills.ts",
+            "tsConfig": "apps/shop/tsconfig.app.json",
+            "aot": true,
+            "assets": ["apps/shop/src/favicon.ico", "apps/shop/src/assets"],
+            "styles": ["apps/shop/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/shop/src/environments/environment.ts",
+                  "with": "apps/shop/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "shop:build",
+            "proxyConfig": "apps/shop/proxy.conf.json"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "shop:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "shop:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/shop/tsconfig.app.json",
+              "apps/shop/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/shop/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/shop/jest.config.js",
+            "tsConfig": "apps/shop/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/shop/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "shop-e2e": {
+      "root": "apps/shop-e2e",
+      "sourceRoot": "apps/shop-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/shop-e2e/cypress.json",
+            "tsConfig": "apps/shop-e2e/tsconfig.e2e.json",
+            "devServerTarget": "shop:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "shop:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/shop-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/shop-e2e/**"]
+          }
+        }
+      }
+    },
+    "shop-products": {
+      "projectType": "library",
+      "root": "libs/shop/products",
+      "sourceRoot": "libs/shop/products/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/products/tsconfig.lib.json",
+              "libs/shop/products/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/products/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/products/jest.config.js",
+            "tsConfig": "libs/shop/products/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/products/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-material": {
+      "projectType": "library",
+      "root": "libs/shared/material",
+      "sourceRoot": "libs/shared/material/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/material/tsconfig.lib.json",
+              "libs/shared/material/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/material/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/material/jest.config.js",
+            "tsConfig": "libs/shared/material/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/material/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shop-utils": {
+      "projectType": "library",
+      "root": "libs/shop/utils",
+      "sourceRoot": "libs/shop/utils/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/utils/tsconfig.lib.json",
+              "libs/shop/utils/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/utils/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/utils/jest.config.js",
+            "tsConfig": "libs/shop/utils/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/utils/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shop-data-access": {
+      "projectType": "library",
+      "root": "libs/shop/data-access",
+      "sourceRoot": "libs/shop/data-access/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/data-access/tsconfig.lib.json",
+              "libs/shop/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/data-access/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/data-access/jest.config.js",
+            "tsConfig": "libs/shop/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shop-backend": {
+      "root": "apps/shop-backend",
+      "sourceRoot": "apps/shop-backend/src",
+      "projectType": "application",
+      "prefix": "shop-backend",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/shop-backend",
+            "main": "apps/shop-backend/src/main.ts",
+            "tsConfig": "apps/shop-backend/tsconfig.app.json",
+            "assets": ["apps/shop-backend/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/shop-backend/src/environments/environment.ts",
+                  "with": "apps/shop-backend/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "shop-backend:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/shop-backend/tsconfig.app.json",
+              "apps/shop-backend/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/shop-backend/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/shop-backend/jest.config.js",
+            "tsConfig": "apps/shop-backend/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
-  }
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "shop"
 }

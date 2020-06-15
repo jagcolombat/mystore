@@ -18,5 +18,28 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "shop": {
+      "tags": []
+    },
+    "shop-e2e": {
+      "tags": [],
+      "implicitDependencies": ["shop"]
+    },
+    "shop-products": {
+      "tags": []
+    },
+    "shared-material": {
+      "tags": []
+    },
+    "shop-utils": {
+      "tags": []
+    },
+    "shop-data-access": {
+      "tags": []
+    },
+    "shop-backend": {
+      "tags": []
+    }
+  }
 }
