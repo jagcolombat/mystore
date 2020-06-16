@@ -19,7 +19,10 @@
       "@ecommerce/shop/products": ["libs/shop/products/src/index.ts"],
       "@ecommerce/shared/material": ["libs/shared/material/src/index.ts"],
       "@ecommerce/shop/utils": ["libs/shop/utils/src/index.ts"],
-      "@ecommerce/shop/data-access": ["libs/shop/data-access/src/index.ts"]
+      "@ecommerce/shop/data-access": ["libs/shop/data-access/src/index.ts"],
+      "@ecommerce/shop/layout": ["libs/shop/layout/src/index.ts"],
+      "@ecommerce/shop/ui": ["libs/shop/ui/src/index.ts"],
+      "@ecommerce/shared/security": ["libs/shared/security/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

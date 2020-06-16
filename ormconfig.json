@@ -8,7 +8,9 @@
   "database": "shop",
   "synchronize": true,
   "logging": true,
-  "entities": "dist/shop-backend/**/*.entity.js",
+  "entities": [
+    "apps/shop-backend/src/app/shop/entity/**/*.ts"
+  ],
   "cli": {
     "entitiesDir": "apps/shop-backend/app/src"
   }

@@ -40,6 +40,15 @@
     },
     "shop-backend": {
       "tags": []
+    },
+    "shop-layout": {
+      "tags": []
+    },
+    "shop-ui": {
+      "tags": []
+    },
+    "shared-security": {
+      "tags": []
     }
   }
 }

@@ -304,6 +304,102 @@
           }
         }
       }
+    },
+    "shop-layout": {
+      "projectType": "library",
+      "root": "libs/shop/layout",
+      "sourceRoot": "libs/shop/layout/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/layout/tsconfig.lib.json",
+              "libs/shop/layout/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/layout/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/layout/jest.config.js",
+            "tsConfig": "libs/shop/layout/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/layout/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shop-ui": {
+      "projectType": "library",
+      "root": "libs/shop/ui",
+      "sourceRoot": "libs/shop/ui/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/ui/tsconfig.lib.json",
+              "libs/shop/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/ui/jest.config.js",
+            "tsConfig": "libs/shop/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-security": {
+      "projectType": "library",
+      "root": "libs/shared/security",
+      "sourceRoot": "libs/shared/security/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/security/tsconfig.lib.json",
+              "libs/shared/security/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/security/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/security/jest.config.js",
+            "tsConfig": "libs/shared/security/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/security/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
