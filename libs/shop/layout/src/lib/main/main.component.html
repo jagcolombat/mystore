@@ -1,1 +1,13 @@
-<p>main works!</p>
+<ecommerce-header [subheader]="opSelected">
+  <!--<ecommerce-toolbar [options]="options" (evSelOption)="setOption($event)"></ecommerce-toolbar>-->
+  <a mat-button
+     *ngFor="let op of options"
+     [routerLink]="op.toLowerCase()"
+     routerLinkActive="active"
+     (click)="opSelected = op"
+  >{{op}}</a>
+</ecommerce-header>
+
+<router-outlet></router-outlet><!--
+<router-outlet name="admin"></router-outlet>-->
+<ecommerce-footer></ecommerce-footer>

@@ -1,1 +1,5 @@
-<p>toolbar works!</p>
+<a mat-raised-button
+   *ngFor="let op of options"
+   [routerLink]="'/products'"
+   routerLinkActive="active"
+>{{op}}</a>

@@ -1,5 +1,5 @@
 
-export class SearchProductDto{
+export class ProductSearchDto{
   //@IsOptional()
   term?: string;
 }

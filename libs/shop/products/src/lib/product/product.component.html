@@ -1,1 +1,17 @@
-<p>product works!</p>
+<mat-card class="prod-card">
+  <mat-card-header>
+    <!--<img mat-card-avatar src="assets/no-img.jpg" class="header-image">-->
+    <mat-card-title>
+      <span class="header-title">{{product.name.toUpperCase()}}</span>
+      <span class="header-subtitle" >{{product.price | currency }}</span>
+    </mat-card-title>
+    <!--<mat-card-subtitle>{{product.price | currency }}</mat-card-subtitle>-->
+  </mat-card-header>
+  <img *ngIf="showImg" mat-card-image src="assets/no-img.jpg" alt="No image">
+  <mat-card-content>
+    <p>{{product.description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button>ADD</button>
+  </mat-card-actions>
+</mat-card>

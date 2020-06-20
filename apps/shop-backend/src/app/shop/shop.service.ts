@@ -19,6 +19,13 @@ export class ShopService {
 
     return products.map(product => toProductDto(product));
   }
+
+  // Get all products
+  async getAllProducts(): Promise<ProductDto[]> {
+
+    const products = await this.productRepo.find();
+    return products.map(product => toProductDto(product));
+  }
   // Add product
   async addProduct(addProductDto: AddProductDto): Promise<ProductDto> {
     const {name, price, description} = addProductDto;

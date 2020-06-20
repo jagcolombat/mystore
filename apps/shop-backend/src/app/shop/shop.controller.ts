@@ -3,15 +3,17 @@ import { ShopService } from './shop.service';
 import { AddProductDto } from './dto/product.create.dto';
 import { ProductDto } from './dto/product.dto';
 import { ProductListDto } from './dto/product.list.dto';
-import { SearchProductDto } from './dto/search-product.dto';
+import { ProductSearchDto } from './dto/product.search.dto';
 
-@Controller('products')
+@Controller('product')
 export class ShopController {
   constructor(private readonly shopService: ShopService){}
 
   @Get()
-  async findAll(@Query() query: SearchProductDto): Promise<ProductListDto>{
-    const products = await this.shopService.searchProducts(query.term || '');
+  async find(@Query() query: ProductSearchDto): Promise<ProductListDto>{
+    const products = query.term ?
+      await this.shopService.searchProducts(query.term || '') :
+      await this.shopService.getAllProducts();
     return { products };
   }
 

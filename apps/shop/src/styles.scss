@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~segoe-fonts/segoe-fonts.css";
+//@import "~stela-icons/stela-icons.css";
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Segoe UI, Roboto, monospace',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+@include mat-base-typography($custom-typography);
+@include mat-checkbox-typography($custom-typography);
+@include angular-material-typography($custom-typography);
+
+$ec-primary: mat-palette($mat-indigo);
+$ec-accent: mat-palette($mat-pink, A200, A100, A400);
+$ec-warn: mat-palette($mat-red);
+
+$ecommerce-theme: mat-light-theme($ec-primary, $ec-accent, $ec-warn);
+
+@include angular-material-theme($ecommerce-theme);
+
+@import '~ag-grid-community/src/styles/ag-grid.scss';
+@import '~ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin.scss';
+
+.ag-theme-material {
+  @include ag-theme-material((
+    odd-row-background-color: #e6f6fb,
+    font-family: "Segoe UI"
+    /*,
+    borders: true,
+    border-radius: 15px*/
+  ));
+}
+
+html {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+body {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-family: Segoe UI, Roboto, sans-serif;
+}
+

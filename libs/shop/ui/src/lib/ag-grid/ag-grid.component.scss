@@ -1,0 +1,29 @@
+ag-grid-angular {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+
+  & >>> .customHeaderLabel {
+    /*Necessary to allow for text to grow vertically*/
+    width: 100% !important;
+  }
+
+  & >>> [col-id='total'] {
+    & >>> .customHeaderLabel {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  /*& >>> * {
+    cursor: none !important;
+  }*/
+}
+
+::ng-deep .ag-theme-material .ag-header-row {
+  font-size: 16px !important;
+}
+
+/*::ng-deep .ag-theme-material .customHeaderLabel {
+  width: 100% !important;
+}*/

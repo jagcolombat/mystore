@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProductService } from '@ecommerce/shop/data-access';
+import { ProductDto, ProductListDto } from '@ecommerce/shop/share/dto';
 
 @Component({
   selector: 'ecommerce-grid-products',
@@ -7,7 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridProductsComponent implements OnInit {
 
-  constructor() { }
+  products: ProductListDto | ProductDto[];
+  @Input() showImgProd: boolean;
+
+  constructor(private prodService: ProductService) {
+    this.prodService.getProducts().subscribe(
+      next => {
+        console.log('products', next);
+        this.products = next.products;
+      },
+        error1 => console.error(error1)
+
+    );
+  }
 
   ngOnInit(): void {
   }

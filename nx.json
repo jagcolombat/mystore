@@ -49,6 +49,15 @@
     },
     "shared-security": {
       "tags": []
+    },
+    "shared-api": {
+      "tags": []
+    },
+    "shop-admin": {
+      "tags": []
+    },
+    "shop-share-dto": {
+      "tags": []
     }
   }
 }

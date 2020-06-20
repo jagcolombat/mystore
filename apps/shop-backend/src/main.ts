@@ -35,7 +35,7 @@ async function bootstrap() {
     Logger.log('Listening at http://localhost:' + port /!*+ '/' + globalPrefix*!/, 'Bootstrap');
   });*/
 
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, { cors: true});
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
   const port = process.env.PORT || 3333;

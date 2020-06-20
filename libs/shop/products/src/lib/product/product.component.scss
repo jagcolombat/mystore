@@ -1,0 +1,40 @@
+:host {
+  //flex: 1;
+}
+
+.prod-card {
+  max-width: 250px;
+  height: 450px;
+}
+
+mat-card-header >>> .mat-card-header-text {
+  display: flex !important;
+  flex: 1;
+}
+
+mat-card-title {
+    flex: 1;
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.mat-card-image {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.header-subtitle {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+}
+
+.header-image {
+  //background-image: url("~src/assets/no-img.jpg");
+  background-size: cover;
+}
+
+mat-card-content {
+  height: 40px;
+}
