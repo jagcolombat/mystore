@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Query, Req } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, Param, Post, Put, Query, Req } from '@nestjs/common';
 import { ShopService } from './shop.service';
 import { AddProductDto } from './dto/product.create.dto';
 import { ProductDto } from './dto/product.dto';
@@ -24,5 +24,24 @@ export class ShopController {
   ): Promise<ProductDto>{
     console.log('create', addProductDto);
     return await this.shopService.addProduct(addProductDto);
+  }
+
+  @Put(':id')
+  async update(
+    @Param('id') id: string,
+    @Body() productDto: ProductDto,
+  ): Promise<ProductDto>{
+    console.log('update', productDto, id);
+    return await this.shopService.updateProduct(id, productDto);
+  }
+
+  @Delete(':id')
+  @HttpCode(204)
+  async destroy(
+    @Param('id') id: string,
+    @Body() productDto: ProductDto,
+  ): Promise<ProductDto>{
+    console.log('update', productDto, id);
+    return await this.shopService.deleteProduct(id);
   }
 }

@@ -45,7 +45,7 @@ export class ShopService {
     });
 
     if(!product){
-      throw new HttpException(`Movie doesn't exist`, HttpStatus.BAD_REQUEST);
+      throw new HttpException(`Product doesn't exist`, HttpStatus.BAD_REQUEST);
     }
 
     product = { id, name, price, description};
@@ -61,7 +61,7 @@ export class ShopService {
     });
 
     if(!product){
-      throw new HttpException(`Movie doesn't exist`, HttpStatus.BAD_REQUEST);
+      throw new HttpException(`Product doesn't exist`, HttpStatus.BAD_REQUEST);
     }
 
     await this.productRepo.delete({id});

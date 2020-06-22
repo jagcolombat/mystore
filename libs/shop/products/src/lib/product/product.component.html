@@ -1,7 +1,7 @@
 <mat-card class="prod-card">
   <mat-card-header>
     <!--<img mat-card-avatar src="assets/no-img.jpg" class="header-image">-->
-    <mat-card-title>
+    <mat-card-title color="accent">
       <span class="header-title">{{product.name.toUpperCase()}}</span>
       <span class="header-subtitle" >{{product.price | currency }}</span>
     </mat-card-title>
@@ -12,6 +12,6 @@
     <p>{{product.description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button>ADD</button>
+    <button mat-raised-button color="warn">ADD</button>
   </mat-card-actions>
 </mat-card>

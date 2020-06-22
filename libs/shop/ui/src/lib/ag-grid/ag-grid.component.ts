@@ -1,8 +1,11 @@
-import { Component, EventEmitter, OnInit, Output, OnDestroy, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { GridOptions, GridApi, ColDef } from 'ag-grid-community';
-import { Subscription } from "rxjs";
-import { CustomHeaderComponent } from "./custom-header.component";
+import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
+import { GridApi, GridOptions } from 'ag-grid-community';
+import { Subscription } from 'rxjs';
+import { CustomHeaderComponent } from './custom-header.component';
 import { ProductGridDef } from '@ecommerce/shop/utils';
+import { ItemAction } from '../../../../admin/src/lib/utils/item-action';
+import { ItemActionEnum } from '../../../../admin/src/lib/utils/item-action.enum';
+
 @Component({
   selector: 'ecommerce-ag-grid',
   templateUrl: './ag-grid.component.html',
@@ -10,8 +13,10 @@ import { ProductGridDef } from '@ecommerce/shop/utils';
 })
 export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   @Output() updateData = new EventEmitter<boolean>();
+  @Output() evSelItem = new EventEmitter<any>();
   @Input() columns: [ProductGridDef];
   @Input() data: any;
+  @Input() item: ItemAction;
   columnDefs: any;
   gridReady: boolean;
   public gridOptions: GridOptions;
@@ -22,18 +27,26 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
 
 
   constructor() {
-
     this.context = { componentParent: this };
-    /*this.subscriptions.push(this.invoiceService.evDelAllProds.subscribe(ev => this.clearData()));
-    this.subscriptions.push(this.invoiceService.evDelProd.subscribe(ev => this.onRemoveSelected()));
-    this.subscriptions.push(this.invoiceService.evUpdateProds.subscribe(ev => this.updateItems(ev)));
-    this.subscriptions.push(this.invoiceService.evAddProd.subscribe(ev => this.onAddRow(ev)));
-    this.subscriptions.push(this.cashService.evReviewEnableState.subscribe(ev => this.updateSelectable(ev)));*/
   }
 
   ngOnChanges(sc: SimpleChanges){
     console.log('change', sc);
     if(sc.data && this.gridReady) this.updateItems();
+    if(sc.item && this.gridReady) {
+      //this.item.item.price = +this.item.item.price.toFixed(2);
+      switch (this.item.action) {
+        case ItemActionEnum.ADD:
+          this.onAddRow(this.item.item);
+          break;
+        case ItemActionEnum.UPD:
+          this.onUpdateRow(this.item.item);
+          break;
+        case ItemActionEnum.DEL:
+          this.onDeleteRow(this.item.item);
+          break;
+      }
+    }
   }
 
   ngOnInit() {
@@ -78,10 +91,12 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
       onRowSelected: (ev) => {
         console.log('onRowSelected', ev);
         //this.invoiceService.invoiceProductSelected = this.gridOptions.api.getSelectedRows();
+        this.evSelItem.emit(this.gridOptions.api.getSelectedRows());
       },
       onRowClicked: (ev) => {
         console.log('onRowClicked', ev);
         //this.invoiceService.invoiceProductSelected = this.gridOptions.api.getSelectedRows();
+        this.evSelItem.emit(this.gridOptions.api.getSelectedRows());
       },
       onBodyScroll: (ev) => {
         this.gridOptions.api.sizeColumnsToFit();
@@ -106,12 +121,26 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   onAddRow(data) {
-    const formatNumber = (number)=> Number.isInteger(number)? number : Number(number).toFixed(2);
     console.log('onAddRow', data, this.gridOptions.api.getDisplayedRowCount());
     data.price = Number(data.price).toFixed(2);
     const res = this.gridOptions.api.updateRowData({ add: [data] });
-    //this.gridOptions.api.ensureIndexVisible(this.gridOptions.api.getDisplayedRowCount()-1);
-    //this.updateData.emit(true);
+    //this.gridOptions.api.updateRowData({ remove: selectedData });
+  }
+
+  onDeleteRow(data) {
+    console.log('onDeleteRow', data);
+    const res = this.gridOptions.api.updateRowData({ remove: [data] });
+  }
+
+  onUpdateRow(data) {
+    console.log('onUpdateRow', data, this.gridOptions.api.getDisplayedRowCount());
+    data.price = Number(data.price).toFixed(2);
+    this.gridOptions.api.forEachNode(function(node) {
+      if(node.data.id === data.id){
+        node.setData(data)
+      };
+    });
+    //const res = this.gridOptions.api.updateRowData(data);
   }
 
   getRowData() {
@@ -159,35 +188,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
     }
   }*/
 
-  /*deleteOnInvoice(){
-    // console.log('before', this.invoiceService.invoice.productsOrders);
-    this.invoiceService.invoice.productOrders = <ProductOrder[]>[...this.getRowData()];
-    // console.log('later', this.invoiceService.invoice.productsOrders);
-  }*/
-
-
-
-  private updateSelectable(ev) {
-    console.log('updateSelectable', !ev);
-    this.selectableProd = !ev;
-    this.createColumnDefs();
-    this.gridOptions.api.sizeColumnsToFit();
-  }
-
-  showDiscount(show: boolean) {
-    this.gridOptions.columnApi.setColumnVisible('discount', show);
-    this.gridOptions.api.sizeColumnsToFit();
-    /*this.gridOptions.api.refreshCells();
-    this.gridOptions.api.redrawRows();
-    this.gridApi.refreshView();
-    this.gridApi.doLayout();*/
-  }
-
   ngOnDestroy() {
     this.subscriptions.map(sub => sub.unsubscribe());
-  }
-
-  private addItem(ev: any) {
-
   }
 }

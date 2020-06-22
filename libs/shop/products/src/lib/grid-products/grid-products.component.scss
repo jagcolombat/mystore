@@ -1,9 +1,10 @@
 :host {
-  display: flex;
-  flex: 1;
-  margin: 10px 20px;
+  display: grid;
+  //flex: 1;
+  margin: 20px 20px;
+  grid-template-columns: repeat(4, 1fr);
 }
-
+/*
 ecommerce-product+ecommerce-product {
-  margin-left: 10px;
-}
+  margin-left: 20px;
+}*/

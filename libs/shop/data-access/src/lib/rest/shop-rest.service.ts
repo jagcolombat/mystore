@@ -21,7 +21,7 @@ export class ShopRestService {
     return this.apiService.put(`${environment.api_url}${url}`, data);
   }
 
-  delete<T>(url: string): Observable<T> {
+  delete<T>(url: string, params?: any): Observable<T> {
     return this.apiService.delete<T>(`${environment.api_url}${url}`);
   }
 }

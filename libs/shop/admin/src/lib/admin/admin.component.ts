@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '@ecommerce/shop/data-access';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProductDto } from '@ecommerce/shop/share/dto';
+import { ItemAction } from '../utils/item-action';
+import { ItemActionEnum } from '../utils/item-action.enum';
 
 @Component({
   selector: 'ecommerce-admin',
@@ -8,38 +9,28 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
-  /*columDefs: any;
-  data: any;*/
 
-  constructor(private prodService: ProductService) {
-    /*this.columDefs = [
-      {
-        field: 'name',
-        title: 'Name',
-        width: 80
-      },
-      {
-        field: 'description',
-        title: 'Description',
-        width: 100
-      },
-      {
-        field: 'price',
-        title: 'Price',
-        width: 50,
-        type: 'numericColumn'
-      }
-    ]
+  product: ItemAction;
+  prod2Edit: ProductDto;
+  //updatedProd: ProductDto;
 
-    this.prodService.getProducts().subscribe(
-      next => {
-        console.log('products', next);
-        this.data = next.products;
-      },
-      error1 => console.error(error1)
-    );*/
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  ngOnInit(){}
+  addProduct(product: ProductDto) {
+    console.log('addProduct', product);
+    this.product = {action: ItemActionEnum.ADD, item:product};
+  }
 
+  updateProduct(product: ProductDto) {
+    console.log('updateProduct', product);
+    this.product = {action: ItemActionEnum.UPD, item:product};
+  }
+
+  editProd(prods: ProductDto[]) {
+    console.log('editProd', prods);
+    this.prod2Edit = prods[0];
+  }
 }

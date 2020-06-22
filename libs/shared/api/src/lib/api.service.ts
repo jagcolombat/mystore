@@ -14,6 +14,7 @@ export class ApiService {
   }
 
   post<T, D>(url: string, data: D): Observable<T> {
+    console.log('post', url, data);
     return this.http.post<T>(`${url}`, JSON.stringify(data), { headers: this.headers });
   }
 

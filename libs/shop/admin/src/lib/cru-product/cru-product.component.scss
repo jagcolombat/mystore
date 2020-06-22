@@ -9,10 +9,14 @@
   flex-direction: column;
 }*/
 
-form {
+form, mat-card-actions {
   padding: 0 10px;
 }
 
 mat-form-field {
   width: 90%;
+}
+
+textarea {
+  max-height: 100px;
 }

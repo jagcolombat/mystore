@@ -1,27 +1,4 @@
-<!--<ecommerce-manage-products></ecommerce-manage-products>
-<p>admin works!</p>-->
-  <!--<mat-card class="product-list">
-    <mat-card-subtitle>List of Products</mat-card-subtitle>
-    <mat-card-content class="product-list-content">
-      <ecommerce-ag-grid class="container" fxFlex="50" [data]="data" [columns]="columDefs"></ecommerce-ag-grid>
-    </mat-card-content>
-  </mat-card>-->
-  <!--<mat-card class="product-cru">
-    <mat-card-subtitle>Add/Edit Product</mat-card-subtitle>
-    <mat-card-content>
-      <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <mat-form-field>
-          <input type="text" matInput placeholder="Name" formControlName="name">
-        </mat-form-field>
-        <mat-form-field>
-          <input type="number" matInput placeholder="Price" formControlName="price">
-        </mat-form-field>
-        <mat-form-field>
-          <textarea matInput rows="3" placeholder="Description" formControlName="description"></textarea>
-        </mat-form-field>
-        <button mat-button type="submit">Save</button>
-      </form>
-    </mat-card-content>
-  </mat-card>-->
-<ecommerce-manage-products></ecommerce-manage-products>
-<ecommerce-cru-product></ecommerce-cru-product>
+<ecommerce-manage-products [addProd]="product" (evEditProd)="editProd($event)">
+</ecommerce-manage-products>
+<ecommerce-cru-product (evAddProd)="addProduct($event)" (evUpdateProd)="updateProduct($event)"
+                       [prod2Edit]="prod2Edit"></ecommerce-cru-product>
