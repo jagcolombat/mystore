@@ -55,10 +55,10 @@ export class ManageProductsComponent implements OnInit {
   selProduct(selectedProds: any[]) {
     console.log('selProduct', selectedProds);
     this.selectedProds = selectedProds;
-    if(selectedProds.length > 1){
+    /*if(selectedProds.length > 1){
       this.delBtnDisabled = false;
       this.editBtnDisabled = true;
-    } else if(selectedProds.length === 1){
+    } else*/ if(selectedProds.length === 1){
       this.editBtnDisabled = this.delBtnDisabled = false;
     } else {
       this.editBtnDisabled = this.delBtnDisabled = true;

@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~segoe-fonts/segoe-fonts.css";
-//@import "~stela-icons/stela-icons.css";
 
 @import '~@angular/material/theming';
 
@@ -32,9 +31,6 @@ $ecommerce-theme: mat-light-theme($ec-primary, $ec-accent, $ec-warn);
   @include ag-theme-material((
     odd-row-background-color: #e6f6fb,
     font-family: "Segoe UI"
-    /*,
-    borders: true,
-    border-radius: 15px*/
   ));
 }
 
@@ -50,5 +46,14 @@ body {
   left: 0;
   position: absolute;
   font-family: Segoe UI, Roboto, sans-serif;
+}
+
+mat-card-subtitle{
+  font-weight: bold !important;
+  font-size: 20px !important;
+}
+
+mat-card-content {
+  padding: 0 10px;
 }
 

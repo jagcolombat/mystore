@@ -7,6 +7,7 @@ import { SharedMaterialModule } from '@ecommerce/shared/material';
 import { ShopDataAccessModule } from '@ecommerce/shop/data-access';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedSecurityModule } from '@ecommerce/shared/security';
+import { errorInterceptorProvider, jwtInterceptorProvider } from '@ecommerce/shared/security';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +26,7 @@ import { SharedSecurityModule } from '@ecommerce/shared/security';
     ShopDataAccessModule/*,
     SharedSecurityModule*/
   ],
-  providers: [],
+  providers: [jwtInterceptorProvider, errorInterceptorProvider],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

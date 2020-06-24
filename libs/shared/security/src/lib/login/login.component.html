@@ -4,14 +4,25 @@
     <mat-card-content>
         <mat-form-field>
           <input type="text" matInput placeholder="Username" formControlName="username">
+          <mat-error *ngIf="submitted && f.username.errors?.required">
+            Username is a required field
+          </mat-error>
         </mat-form-field>
         <mat-form-field>
           <input type="password" matInput placeholder="Password" formControlName="password">
+          <mat-error *ngIf="submitted && f.password.errors?.required">
+            Password is a required field
+          </mat-error>
         </mat-form-field>
+        <!--<mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
+        <mat-error *ngIf="error" class="alert">{{ error }}</mat-error>
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button color="primary" type="submit">Login</button>
-      <button mat-raised-button [routerLink]="'user-register'">Register</button>
+      <!--<button mat-raised-button [routerLink]="'user-register'">Register</button>-->
     </mat-card-actions>
+    <!--<mat-error *ngIf="submitted && f.username.errors?.required">
+      Username is a required field
+    </mat-error>-->
   </mat-card>
 </form>

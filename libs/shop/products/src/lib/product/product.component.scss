@@ -8,14 +8,15 @@
   height: 450px;
 }
 
-mat-card-header >>> .mat-card-header-text {
+::ng-deep mat-card-header .mat-card-header-text {
   display: flex !important;
   flex: 1;
+  margin: 0;
 }
 
 mat-card-title {
     flex: 1;
-    width: 200px;
+    //width: 240px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
