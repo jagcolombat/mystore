@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { SharedMaterialModule } from '@ecommerce/shared/material';
 import { ShopDataAccessModule } from '@ecommerce/shop/data-access';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedSecurityModule } from '@ecommerce/shared/security';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,12 +15,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: 'home', loadChildren: () => import('@ecommerce/shop/layout')
-          .then(m => m.ShopLayoutModule)},
-
+          .then(m => m.ShopLayoutModule)},/*
+      { path: 'login', loadChildren: () => import('@ecommerce/shared/security')
+          .then(m => m.SharedSecurityModule)},*/
       { path: '', pathMatch: 'full', redirectTo: 'home'},
+      { path: '**', redirectTo: ''}
     ], { initialNavigation: 'enabled' }),
     SharedMaterialModule,
-    ShopDataAccessModule
+    ShopDataAccessModule/*,
+    SharedSecurityModule*/
   ],
   providers: [],
   bootstrap: [AppComponent],

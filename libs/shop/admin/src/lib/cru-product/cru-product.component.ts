@@ -47,7 +47,7 @@ export class CruProductComponent implements OnInit, OnChanges {
     this.submitted = true;
     if(this.form.valid){
       console.log(this.prod2Edit)
-      this.prod2Edit.id !== undefined ? this.updateProduct() : this.saveProduct();
+      this.prod2Edit && this.prod2Edit.id !== undefined ? this.updateProduct() : this.saveProduct();
     }
   }
 

@@ -4,7 +4,7 @@
      *ngFor="let op of options"
      [routerLink]="op.toLowerCase()"
      routerLinkActive="active"
-     (click)="opSelected = op"
+     (click)="setOption(op)"
   >{{op}}</a>
 </ecommerce-header>
 
