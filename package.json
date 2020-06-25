@@ -7,7 +7,6 @@
     "nx": "nx",
     "start": "node dist/apps/shop-backend/main",
     "start:dev": "ng serve",
-    "build": "ng build",
     "build:shop": "nx build shop --base-href=/mystore/ --deploy-url=/mystore/ --prod",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
