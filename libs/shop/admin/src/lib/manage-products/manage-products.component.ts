@@ -10,17 +10,16 @@ import { ItemActionEnum } from '../utils/item-action.enum';
   styleUrls: ['./manage-products.component.scss']
 })
 export class ManageProductsComponent implements OnInit {
-
+  @Input() data: any;
   @Input() addProd: ItemAction;
   @Output() evEditProd= new EventEmitter<ProductDto[]>();
-  @Output() evDelProds= new EventEmitter<ProductDto[]>();
+  @Output() evDelProd= new EventEmitter<ProductDto[]>();
   columDefs: any;
-  data: any;
   editBtnDisabled = true;
   delBtnDisabled = true;
   selectedProds: any[];
 
-  constructor(private prodService: ProductService) {
+  constructor() {
     this.columDefs = [
       {
         field: 'name',
@@ -39,14 +38,6 @@ export class ManageProductsComponent implements OnInit {
         type: 'numericColumn'
       }
     ];
-
-    this.prodService.getProducts().subscribe(
-      next => {
-        console.log('products', next);
-        this.data = next.products;
-      },
-      error1 => console.error(error1)
-    );
   }
 
   ngOnInit(): void {
@@ -67,14 +58,15 @@ export class ManageProductsComponent implements OnInit {
 
   deleteProd() {
     console.log('deleteProd', this.selectedProds);
-    this.prodService.deleteProduct(this.selectedProds[0].id).subscribe(
+    this.evDelProd.emit(this.selectedProds[0]);
+    /*this.prodService.deleteProduct(this.selectedProds[0].id).subscribe(
       next => {
         console.log('deleted products', next);
         //this.evDelProds.emit(this.selectedProds[0]);
         this.addProd = { action: ItemActionEnum.DEL, item: this.selectedProds[0]};
       },
       error1 => console.error(error1)
-    );
+    );*/
   }
 
   editProd() {

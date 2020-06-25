@@ -1,9 +1,6 @@
 import { Body, Controller, Delete, Get, HttpCode, Param, Post, Put, Query, Req } from '@nestjs/common';
 import { ShopService } from './shop.service';
-import { AddProductDto } from './dto/product.create.dto';
-import { ProductDto } from './dto/product.dto';
-import { ProductListDto } from './dto/product.list.dto';
-import { ProductSearchDto } from './dto/product.search.dto';
+import { AddProductDto, ProductDto, ProductListDto, ProductSearchDto } from '@ecommerce/shop/share/dto';
 
 @Controller('product')
 export class ShopController {

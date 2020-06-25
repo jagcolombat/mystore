@@ -130,14 +130,16 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   onDeleteRow(data) {
     console.log('onDeleteRow', data);
     const res = this.gridOptions.api.updateRowData({ remove: [data] });
+    this.gridOptions.api.deselectAll();
   }
 
   onUpdateRow(data) {
     console.log('onUpdateRow', data, this.gridOptions.api.getDisplayedRowCount());
     data.price = Number(data.price).toFixed(2);
+    this.gridOptions.api.deselectAll();
     this.gridOptions.api.forEachNode(function(node) {
       if(node.data.id === data.id){
-        node.setData(data)
+        node.setData(data);
       };
     });
     //const res = this.gridOptions.api.updateRowData(data);

@@ -27,6 +27,7 @@
           Product description length must be not exceed 250 character
         </mat-error>-->
       </mat-form-field>
+      <mat-error *ngIf="error" class="alert">{{ error }}</mat-error>
       <button mat-raised-button color="primary" type="submit">Save</button>
     </form>
   </mat-card-content>

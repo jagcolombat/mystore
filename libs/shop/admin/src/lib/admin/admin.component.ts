@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductDto } from '@ecommerce/shop/share/dto';
+import { AddProductDto, ProductDto } from '@ecommerce/shop/share/dto';
 import { ItemAction } from '../utils/item-action';
 import { ItemActionEnum } from '../utils/item-action.enum';
+import { ProductService } from '@ecommerce/shop/data-access';
 
 @Component({
   selector: 'ecommerce-admin',
@@ -12,21 +13,54 @@ export class AdminComponent implements OnInit {
 
   product: ItemAction;
   prod2Edit: ProductDto;
-  //updatedProd: ProductDto;
+  private responseErr = '';
+  products: ProductDto[];
 
-  constructor() { }
+  constructor(private prodService: ProductService) {
+    this.prodService.getProducts().subscribe(
+      next => {
+        console.log('products', next);
+        this.products = next.products;
+      },
+      error1 => console.error(error1)
+    );
+  }
 
   ngOnInit(): void {
   }
 
-  addProduct(product: ProductDto) {
+  addProduct(product: AddProductDto) {
     console.log('addProduct', product);
-    this.product = {action: ItemActionEnum.ADD, item:product};
+    this.prodService.saveProduct(product).subscribe(next => {
+      console.log('added product',next);
+      this.product = {action: ItemActionEnum.ADD, item: next};
+      this.responseErr="";
+    }, error1 => {
+      console.error(error1);
+      this.responseErr = error1;
+    });
   }
 
   updateProduct(product: ProductDto) {
     console.log('updateProduct', product);
-    this.product = {action: ItemActionEnum.UPD, item:product};
+    this.prodService.updateProduct(product).subscribe(next => {
+      console.log('updated product',next);
+      this.product = {action: ItemActionEnum.UPD, item: next};
+      this.responseErr="";
+    }, error1 => {
+      console.error(error1);
+      this.responseErr = error1;
+    })
+  }
+
+  deleteProduct(product: ProductDto){
+    this.prodService.deleteProduct(product.id).subscribe(
+      next => {
+        console.log('deleted product', next);
+        this.product = { action: ItemActionEnum.DEL, item: product};
+      },
+      error1 => console.error(error1)
+    );
   }
 
   editProd(prods: ProductDto[]) {

@@ -1,4 +1,5 @@
-<ecommerce-manage-products [addProd]="product" (evEditProd)="editProd($event)">
+<ecommerce-manage-products [data]="products" [addProd]="product" (evEditProd)="editProd($event)"
+                           (evDelProd)="deleteProduct($event)">
 </ecommerce-manage-products>
-<ecommerce-cru-product (evAddProd)="addProduct($event)" (evUpdateProd)="updateProduct($event)"
-                       [prod2Edit]="prod2Edit"></ecommerce-cru-product>
+<ecommerce-cru-product (evAddProd)="addProduct($event)" (evUpdateProd)="updateProduct($event)" [prod2Edit]="prod2Edit"
+                       [error]="responseErr"></ecommerce-cru-product>

@@ -5,7 +5,7 @@ import {
   CanActivate,
   Router
 } from '@angular/router';
-import { AuthenticationService } from '@ecommerce/shared/security';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Injectable({
   providedIn: 'root'

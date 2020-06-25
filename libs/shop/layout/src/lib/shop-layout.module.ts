@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main/main.component';
 import { ShopUiModule } from '@ecommerce/shop/ui';
 import { RouterModule } from '@angular/router';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from '@ecommerce/shared/security';
 
 @NgModule({
   imports: [

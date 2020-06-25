@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ProductService } from '@ecommerce/shop/data-access';
-import { ProductDto } from '@ecommerce/shop/share/dto';
+import { AddProductDto, ProductDto } from '@ecommerce/shop/share/dto';
 
 @Component({
   selector: 'ecommerce-cru-product',
@@ -10,14 +10,15 @@ import { ProductDto } from '@ecommerce/shop/share/dto';
 })
 export class CruProductComponent implements OnInit, OnChanges {
   @ViewChild('formDirective') private formDirective: NgForm;
-  @Output() evAddProd = new EventEmitter<ProductDto>();
+  @Output() evAddProd = new EventEmitter<AddProductDto>();
   @Output() evUpdateProd = new EventEmitter<ProductDto>();
   @Input() prod2Edit: ProductDto = { id: '', name: '', price: undefined, description: '' };
+  @Input() error = '';
 
   form: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder, private prodService: ProductService) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnChanges(sc: SimpleChanges){
     console.log('changes', sc);
@@ -28,6 +29,10 @@ export class CruProductComponent implements OnInit, OnChanges {
           description: this.prod2Edit.description
         },
       )
+    }
+    if(sc['error']) {
+      console.error(sc['error']);
+      //if(sc['error']) this.formDirective.resetForm();
     }
   }
 
@@ -47,33 +52,32 @@ export class CruProductComponent implements OnInit, OnChanges {
     this.submitted = true;
     if(this.form.valid){
       console.log(this.prod2Edit)
-      this.prod2Edit && this.prod2Edit.id !== undefined ? this.updateProduct() : this.saveProduct();
+      this.prod2Edit && this.prod2Edit.id !== '' ? this.updateProduct() : this.saveProduct();
     }
   }
 
   saveProduct(){
-    this.prodService.saveProduct({
+    this.evAddProd.emit({
       name: this.f.name.value,
       price: this.f.price.value,
       description: this.f.description.value
-    }).subscribe(next => {
-      console.log(next);
-      this.evAddProd.emit(next);
-      this.formDirective.resetForm();
-    }, error1 => console.error(error1))
+    });
+    this.formDirective.resetForm();
   }
 
   updateProduct(){
-    this.prodService.updateProduct({
+    this.evUpdateProd.emit({
       id: this.prod2Edit.id,
       name: this.f.name.value,
       price: this.f.price.value,
       description: this.f.description.value
-    }).subscribe(next => {
-      console.log(next);
-      this.evUpdateProd.emit(next);
-      this.formDirective.resetForm();
-    }, error1 => console.error(error1))
+    });
+    this.resetProdEdit();
+    this.formDirective.resetForm();
+  }
+
+  resetProdEdit(){
+    this.prod2Edit = { id: '', name: '', price: undefined, description: '' };
   }
 
 }

@@ -3,8 +3,7 @@ import { ProductEntity } from './entity/product.entity';
 import { Repository } from 'typeorm';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { toProductDto } from './mapper';
-import { AddProductDto } from './dto/product.create.dto';
-import { ProductDto } from './dto/product.dto';
+import { AddProductDto, ProductDto } from '@ecommerce/shop/share/dto';
 @Injectable()
 export class ShopService {
   constructor(
