@@ -9,7 +9,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { getDbConnection, getDbConnectionOptions } from './shared/utils';
 
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
 async function bootstrap() {
 

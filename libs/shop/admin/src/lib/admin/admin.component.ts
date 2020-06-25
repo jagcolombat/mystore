@@ -13,7 +13,7 @@ export class AdminComponent implements OnInit {
 
   product: ItemAction;
   prod2Edit: ProductDto;
-  private responseErr = '';
+  responseErr = '';
   products: ProductDto[];
 
   constructor(private prodService: ProductService) {

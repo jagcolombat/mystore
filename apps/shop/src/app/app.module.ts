@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { SharedMaterialModule } from '@ecommerce/shared/material';
 import { ShopDataAccessModule } from '@ecommerce/shop/data-access';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SharedSecurityModule } from '@ecommerce/shared/security';
 import { errorInterceptorProvider, jwtInterceptorProvider } from '@ecommerce/shared/security';
 
 @NgModule({
@@ -16,15 +15,18 @@ import { errorInterceptorProvider, jwtInterceptorProvider } from '@ecommerce/sha
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: 'home', loadChildren: () => import('@ecommerce/shop/layout')
-          .then(m => m.ShopLayoutModule)},/*
-      { path: 'login', loadChildren: () => import('@ecommerce/shared/security')
-          .then(m => m.SharedSecurityModule)},*/
+          .then(m => m.ShopLayoutModule)},
       { path: '', pathMatch: 'full', redirectTo: 'home'},
       { path: '**', redirectTo: ''}
-    ], { initialNavigation: 'enabled' }),
+    ], {
+      paramsInheritanceStrategy: 'always',
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      onSameUrlNavigation: 'reload',
+      enableTracing: false
+    }),
     SharedMaterialModule,
-    ShopDataAccessModule/*,
-    SharedSecurityModule*/
+    ShopDataAccessModule
   ],
   providers: [jwtInterceptorProvider, errorInterceptorProvider],
   bootstrap: [AppComponent],
