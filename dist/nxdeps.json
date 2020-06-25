@@ -53,7 +53,12 @@
             {
               "file": "libs/shop/data-access/src/index.ts",
               "ext": ".ts",
-              "mtime": 1592517288470.5645
+              "mtime": 1593078798269.123
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/data/cart/cart.data.service.ts",
+              "ext": ".ts",
+              "mtime": 1593080327354.0085
             },
             {
               "file": "libs/shop/data-access/src/lib/rest/product/product.service.spec.ts",
@@ -507,7 +512,7 @@
             {
               "file": "libs/shop/products/src/lib/grid-products/grid-products.component.html",
               "ext": ".html",
-              "mtime": 1592371541981.194
+              "mtime": 1593080327319.1028
             },
             {
               "file": "libs/shop/products/src/lib/grid-products/grid-products.component.scss",
@@ -522,12 +527,12 @@
             {
               "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
               "ext": ".ts",
-              "mtime": 1592517288492.943
+              "mtime": 1593082116695.8945
             },
             {
               "file": "libs/shop/products/src/lib/product/product.component.html",
               "ext": ".html",
-              "mtime": 1592814681249.567
+              "mtime": 1593080327328.0781
             },
             {
               "file": "libs/shop/products/src/lib/product/product.component.scss",
@@ -542,7 +547,7 @@
             {
               "file": "libs/shop/products/src/lib/product/product.component.ts",
               "ext": ".ts",
-              "mtime": 1592372739009.3335
+              "mtime": 1593080327345.0425
             },
             {
               "file": "libs/shop/products/src/lib/shop-products.module.spec.ts",
@@ -669,7 +674,7 @@
             {
               "file": "apps/shop-backend/src/app/app.module.ts",
               "ext": ".ts",
-              "mtime": 1593074450637.1255
+              "mtime": 1593120977136.4854
             },
             {
               "file": "apps/shop-backend/src/app/app.service.spec.ts",
@@ -799,12 +804,12 @@
             {
               "file": "apps/shop-backend/src/environments/environment.prod.ts",
               "ext": ".ts",
-              "mtime": 1592200574737.7383
+              "mtime": 1593120977115.5398
             },
             {
               "file": "apps/shop-backend/src/environments/environment.ts",
               "ext": ".ts",
-              "mtime": 1592200574738.7368
+              "mtime": 1593120977129.5032
             },
             {
               "file": "apps/shop-backend/src/main.ts",
@@ -911,7 +916,7 @@
             {
               "file": "libs/shop/layout/src/lib/main/main.component.ts",
               "ext": ".ts",
-              "mtime": 1592984123968.522
+              "mtime": 1593081206103.8884
             },
             {
               "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
@@ -921,7 +926,7 @@
             {
               "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
               "ext": ".ts",
-              "mtime": 1593037770493.755
+              "mtime": 1593081277011.2383
             },
             {
               "file": "libs/shop/layout/src/test-setup.ts",
@@ -1003,7 +1008,17 @@
             {
               "file": "libs/shop/utils/src/index.ts",
               "ext": ".ts",
-              "mtime": 1592516036598.4165
+              "mtime": 1593116873850.3264
+            },
+            {
+              "file": "libs/shop/utils/src/lib/enum/index.ts",
+              "ext": ".ts",
+              "mtime": 1593116873859.4858
+            },
+            {
+              "file": "libs/shop/utils/src/lib/enum/item-action.enum.ts",
+              "ext": ".ts",
+              "mtime": 1592803596190
             },
             {
               "file": "libs/shop/utils/src/lib/shop-utils.module.spec.ts",
@@ -1018,7 +1033,12 @@
             {
               "file": "libs/shop/utils/src/lib/types/index.ts",
               "ext": ".ts",
-              "mtime": 1592516197831.6294
+              "mtime": 1593116873831.4314
+            },
+            {
+              "file": "libs/shop/utils/src/lib/types/item-action.ts",
+              "ext": ".ts",
+              "mtime": 1593116873867.7744
             },
             {
               "file": "libs/shop/utils/src/lib/types/product-grid-def.ts",
@@ -1207,7 +1227,7 @@
             {
               "file": "libs/shop/admin/src/index.ts",
               "ext": ".ts",
-              "mtime": 1592440248246.1343
+              "mtime": 1593117444959.2666
             },
             {
               "file": "libs/shop/admin/src/lib/admin/admin.component.html",
@@ -1227,7 +1247,7 @@
             {
               "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
               "ext": ".ts",
-              "mtime": 1593068369195.4797
+              "mtime": 1593117378519.7144
             },
             {
               "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
@@ -1247,27 +1267,7 @@
             {
               "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
               "ext": ".ts",
-              "mtime": 1593048541955.142
-            },
-            {
-              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.html",
-              "ext": ".html",
-              "mtime": 1592803596217.9585
-            },
-            {
-              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.scss",
-              "ext": ".scss",
-              "mtime": 1593030706107.616
-            },
-            {
-              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.spec.ts",
-              "ext": ".ts",
-              "mtime": 1592286415545.628
-            },
-            {
-              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.ts",
-              "ext": ".ts",
-              "mtime": 1593048467767.7888
+              "mtime": 1593093079607.9387
             },
             {
               "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
@@ -1277,17 +1277,7 @@
             {
               "file": "libs/shop/admin/src/lib/shop-admin.module.ts",
               "ext": ".ts",
-              "mtime": 1592596269815.4502
-            },
-            {
-              "file": "libs/shop/admin/src/lib/utils/item-action.enum.ts",
-              "ext": ".ts",
-              "mtime": 1592803596190.0337
-            },
-            {
-              "file": "libs/shop/admin/src/lib/utils/item-action.ts",
-              "ext": ".ts",
-              "mtime": 1592803596239.9001
+              "mtime": 1593083938349.308
             },
             {
               "file": "libs/shop/admin/src/test-setup.ts",
@@ -1313,6 +1303,138 @@
               "file": "libs/shop/admin/tslint.json",
               "ext": ".json",
               "mtime": 1592440248244.138
+            }
+          ]
+        }
+      },
+      "shop-cart": {
+        "name": "shop-cart",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/cart",
+          "sourceRoot": "libs/shop/cart/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/cart/tsconfig.lib.json",
+                  "libs/shop/cart/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/cart/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/cart/jest.config.js",
+                "tsConfig": "libs/shop/cart/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/cart/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/cart/jest.config.js",
+              "ext": ".js",
+              "mtime": 1593077953907.4287
+            },
+            {
+              "file": "libs/shop/cart/README.md",
+              "ext": ".md",
+              "mtime": 1593077953897.4534
+            },
+            {
+              "file": "libs/shop/cart/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1593077953902.4392
+            },
+            {
+              "file": "libs/shop/cart/src/lib/cart/cart.component.html",
+              "ext": ".html",
+              "mtime": 1593093079596.9646
+            },
+            {
+              "file": "libs/shop/cart/src/lib/cart/cart.component.scss",
+              "ext": ".scss",
+              "mtime": 1593091740643.0652
+            },
+            {
+              "file": "libs/shop/cart/src/lib/cart/cart.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593080333213.3496
+            },
+            {
+              "file": "libs/shop/cart/src/lib/cart/cart.component.ts",
+              "ext": ".ts",
+              "mtime": 1593117577006.6042
+            },
+            {
+              "file": "libs/shop/cart/src/lib/quantity/quantity.component.html",
+              "ext": ".html",
+              "mtime": 1593092328251.6826
+            },
+            {
+              "file": "libs/shop/cart/src/lib/quantity/quantity.component.scss",
+              "ext": ".scss",
+              "mtime": 1593090319106.058
+            },
+            {
+              "file": "libs/shop/cart/src/lib/quantity/quantity.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593090078052.9924
+            },
+            {
+              "file": "libs/shop/cart/src/lib/quantity/quantity.component.ts",
+              "ext": ".ts",
+              "mtime": 1593117743728.8286
+            },
+            {
+              "file": "libs/shop/cart/src/lib/shop-cart.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593077953905.4338
+            },
+            {
+              "file": "libs/shop/cart/src/lib/shop-cart.module.ts",
+              "ext": ".ts",
+              "mtime": 1593091893900.7048
+            },
+            {
+              "file": "libs/shop/cart/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1593077953910.4204
+            },
+            {
+              "file": "libs/shop/cart/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1593077953906.4314
+            },
+            {
+              "file": "libs/shop/cart/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1593077953899.4487
+            },
+            {
+              "file": "libs/shop/cart/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1593077953908.4268
+            },
+            {
+              "file": "libs/shop/cart/tslint.json",
+              "ext": ".json",
+              "mtime": 1593077953900.4473
             }
           ]
         }
@@ -1463,7 +1585,7 @@
             {
               "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.html",
               "ext": ".html",
-              "mtime": 1586042232624
+              "mtime": 1593094080469.5112
             },
             {
               "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.scss",
@@ -1478,7 +1600,7 @@
             {
               "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
               "ext": ".ts",
-              "mtime": 1593048199897.8738
+              "mtime": 1593119748608.9326
             },
             {
               "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -1526,6 +1648,26 @@
               "mtime": 1592293535403.393
             },
             {
+              "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.html",
+              "ext": ".html",
+              "mtime": 1593094136241.3699
+            },
+            {
+              "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.scss",
+              "ext": ".scss",
+              "mtime": 1593030706107.616
+            },
+            {
+              "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592286415545.628
+            },
+            {
+              "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
+              "ext": ".ts",
+              "mtime": 1593117224176.7085
+            },
+            {
               "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
               "ext": ".ts",
               "mtime": 1592283579321.803
@@ -1533,7 +1675,7 @@
             {
               "file": "libs/shop/ui/src/lib/shop-ui.module.ts",
               "ext": ".ts",
-              "mtime": 1592518409507.9832
+              "mtime": 1593092062577.4763
             },
             {
               "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.html",
@@ -1910,7 +2052,7 @@
         "type": "npm",
         "name": "@nestjs/jwt",
         "data": {
-          "version": "latest",
+          "version": "^7.0.0",
           "files": []
         }
       },
@@ -2554,6 +2696,11 @@
           "target": "shop-admin"
         },
         {
+          "type": "dynamic",
+          "source": "shop-layout",
+          "target": "shop-cart"
+        },
+        {
           "type": "static",
           "source": "shop-layout",
           "target": "@angular/core"
@@ -2575,6 +2722,11 @@
         }
       ],
       "shop-utils": [
+        {
+          "type": "static",
+          "source": "shop-utils",
+          "target": "shop-share-dto"
+        },
         {
           "type": "static",
           "source": "shop-utils",
@@ -2622,6 +2774,11 @@
         {
           "type": "static",
           "source": "shop-admin",
+          "target": "shop-utils"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
           "target": "shop-data-access"
         },
         {
@@ -2655,6 +2812,53 @@
           "target": "jest-preset-angular"
         }
       ],
+      "shop-cart": [
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "shop-share-dto"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "shop-data-access"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "shop-utils"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "shop-ui"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "@angular/forms"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shop-cart",
+          "target": "jest-preset-angular"
+        }
+      ],
       "shop-e2e": [
         {
           "type": "implicit",
@@ -2676,7 +2880,12 @@
         {
           "type": "static",
           "source": "shop-ui",
-          "target": "shop-admin"
+          "target": "shop-data-access"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "shop-share-dto"
         },
         {
           "type": "static",
@@ -2845,7 +3054,12 @@
       {
         "file": "libs/shop/data-access/src/index.ts",
         "ext": ".ts",
-        "mtime": 1592517288470.5645
+        "mtime": 1593078798269.123
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/data/cart/cart.data.service.ts",
+        "ext": ".ts",
+        "mtime": 1593080327354.0085
       },
       {
         "file": "libs/shop/data-access/src/lib/rest/product/product.service.spec.ts",
@@ -3143,7 +3357,7 @@
       {
         "file": "libs/shop/products/src/lib/grid-products/grid-products.component.html",
         "ext": ".html",
-        "mtime": 1592371541981.194
+        "mtime": 1593080327319.1028
       },
       {
         "file": "libs/shop/products/src/lib/grid-products/grid-products.component.scss",
@@ -3158,12 +3372,12 @@
       {
         "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
         "ext": ".ts",
-        "mtime": 1592517288492.943
+        "mtime": 1593082116695.8945
       },
       {
         "file": "libs/shop/products/src/lib/product/product.component.html",
         "ext": ".html",
-        "mtime": 1592814681249.567
+        "mtime": 1593080327328.0781
       },
       {
         "file": "libs/shop/products/src/lib/product/product.component.scss",
@@ -3178,7 +3392,7 @@
       {
         "file": "libs/shop/products/src/lib/product/product.component.ts",
         "ext": ".ts",
-        "mtime": 1592372739009.3335
+        "mtime": 1593080327345.0425
       },
       {
         "file": "libs/shop/products/src/lib/shop-products.module.spec.ts",
@@ -3240,7 +3454,7 @@
       {
         "file": "apps/shop-backend/src/app/app.module.ts",
         "ext": ".ts",
-        "mtime": 1593074450637.1255
+        "mtime": 1593120977136.4854
       },
       {
         "file": "apps/shop-backend/src/app/app.service.spec.ts",
@@ -3370,12 +3584,12 @@
       {
         "file": "apps/shop-backend/src/environments/environment.prod.ts",
         "ext": ".ts",
-        "mtime": 1592200574737.7383
+        "mtime": 1593120977115.5398
       },
       {
         "file": "apps/shop-backend/src/environments/environment.ts",
         "ext": ".ts",
-        "mtime": 1592200574738.7368
+        "mtime": 1593120977129.5032
       },
       {
         "file": "apps/shop-backend/src/main.ts",
@@ -3442,7 +3656,7 @@
       {
         "file": "libs/shop/layout/src/lib/main/main.component.ts",
         "ext": ".ts",
-        "mtime": 1592984123968.522
+        "mtime": 1593081206103.8884
       },
       {
         "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
@@ -3452,7 +3666,7 @@
       {
         "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
         "ext": ".ts",
-        "mtime": 1593037770493.755
+        "mtime": 1593081277011.2383
       },
       {
         "file": "libs/shop/layout/src/test-setup.ts",
@@ -3494,7 +3708,17 @@
       {
         "file": "libs/shop/utils/src/index.ts",
         "ext": ".ts",
-        "mtime": 1592516036598.4165
+        "mtime": 1593116873850.3264
+      },
+      {
+        "file": "libs/shop/utils/src/lib/enum/index.ts",
+        "ext": ".ts",
+        "mtime": 1593116873859.4858
+      },
+      {
+        "file": "libs/shop/utils/src/lib/enum/item-action.enum.ts",
+        "ext": ".ts",
+        "mtime": 1592803596190
       },
       {
         "file": "libs/shop/utils/src/lib/shop-utils.module.spec.ts",
@@ -3509,7 +3733,12 @@
       {
         "file": "libs/shop/utils/src/lib/types/index.ts",
         "ext": ".ts",
-        "mtime": 1592516197831.6294
+        "mtime": 1593116873831.4314
+      },
+      {
+        "file": "libs/shop/utils/src/lib/types/item-action.ts",
+        "ext": ".ts",
+        "mtime": 1593116873867.7744
       },
       {
         "file": "libs/shop/utils/src/lib/types/product-grid-def.ts",
@@ -3618,7 +3847,7 @@
       {
         "file": "libs/shop/admin/src/index.ts",
         "ext": ".ts",
-        "mtime": 1592440248246.1343
+        "mtime": 1593117444959.2666
       },
       {
         "file": "libs/shop/admin/src/lib/admin/admin.component.html",
@@ -3638,7 +3867,7 @@
       {
         "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
         "ext": ".ts",
-        "mtime": 1593068369195.4797
+        "mtime": 1593117378519.7144
       },
       {
         "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
@@ -3658,27 +3887,7 @@
       {
         "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
         "ext": ".ts",
-        "mtime": 1593048541955.142
-      },
-      {
-        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.html",
-        "ext": ".html",
-        "mtime": 1592803596217.9585
-      },
-      {
-        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.scss",
-        "ext": ".scss",
-        "mtime": 1593030706107.616
-      },
-      {
-        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.spec.ts",
-        "ext": ".ts",
-        "mtime": 1592286415545.628
-      },
-      {
-        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.ts",
-        "ext": ".ts",
-        "mtime": 1593048467767.7888
+        "mtime": 1593093079607.9387
       },
       {
         "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
@@ -3688,17 +3897,7 @@
       {
         "file": "libs/shop/admin/src/lib/shop-admin.module.ts",
         "ext": ".ts",
-        "mtime": 1592596269815.4502
-      },
-      {
-        "file": "libs/shop/admin/src/lib/utils/item-action.enum.ts",
-        "ext": ".ts",
-        "mtime": 1592803596190.0337
-      },
-      {
-        "file": "libs/shop/admin/src/lib/utils/item-action.ts",
-        "ext": ".ts",
-        "mtime": 1592803596239.9001
+        "mtime": 1593083938349.308
       },
       {
         "file": "libs/shop/admin/src/test-setup.ts",
@@ -3724,6 +3923,98 @@
         "file": "libs/shop/admin/tslint.json",
         "ext": ".json",
         "mtime": 1592440248244.138
+      }
+    ],
+    "shop-cart": [
+      {
+        "file": "libs/shop/cart/jest.config.js",
+        "ext": ".js",
+        "mtime": 1593077953907.4287
+      },
+      {
+        "file": "libs/shop/cart/README.md",
+        "ext": ".md",
+        "mtime": 1593077953897.4534
+      },
+      {
+        "file": "libs/shop/cart/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1593077953902.4392
+      },
+      {
+        "file": "libs/shop/cart/src/lib/cart/cart.component.html",
+        "ext": ".html",
+        "mtime": 1593093079596.9646
+      },
+      {
+        "file": "libs/shop/cart/src/lib/cart/cart.component.scss",
+        "ext": ".scss",
+        "mtime": 1593091740643.0652
+      },
+      {
+        "file": "libs/shop/cart/src/lib/cart/cart.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593080333213.3496
+      },
+      {
+        "file": "libs/shop/cart/src/lib/cart/cart.component.ts",
+        "ext": ".ts",
+        "mtime": 1593117577006.6042
+      },
+      {
+        "file": "libs/shop/cart/src/lib/quantity/quantity.component.html",
+        "ext": ".html",
+        "mtime": 1593092328251.6826
+      },
+      {
+        "file": "libs/shop/cart/src/lib/quantity/quantity.component.scss",
+        "ext": ".scss",
+        "mtime": 1593090319106.058
+      },
+      {
+        "file": "libs/shop/cart/src/lib/quantity/quantity.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593090078052.9924
+      },
+      {
+        "file": "libs/shop/cart/src/lib/quantity/quantity.component.ts",
+        "ext": ".ts",
+        "mtime": 1593117743728.8286
+      },
+      {
+        "file": "libs/shop/cart/src/lib/shop-cart.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593077953905.4338
+      },
+      {
+        "file": "libs/shop/cart/src/lib/shop-cart.module.ts",
+        "ext": ".ts",
+        "mtime": 1593091893900.7048
+      },
+      {
+        "file": "libs/shop/cart/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1593077953910.4204
+      },
+      {
+        "file": "libs/shop/cart/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1593077953906.4314
+      },
+      {
+        "file": "libs/shop/cart/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1593077953899.4487
+      },
+      {
+        "file": "libs/shop/cart/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1593077953908.4268
+      },
+      {
+        "file": "libs/shop/cart/tslint.json",
+        "ext": ".json",
+        "mtime": 1593077953900.4473
       }
     ],
     "shop-e2e": [
@@ -3797,7 +4088,7 @@
       {
         "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.html",
         "ext": ".html",
-        "mtime": 1586042232624
+        "mtime": 1593094080469.5112
       },
       {
         "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.scss",
@@ -3812,7 +4103,7 @@
       {
         "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
         "ext": ".ts",
-        "mtime": 1593048199897.8738
+        "mtime": 1593119748608.9326
       },
       {
         "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -3860,6 +4151,26 @@
         "mtime": 1592293535403.393
       },
       {
+        "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.html",
+        "ext": ".html",
+        "mtime": 1593094136241.3699
+      },
+      {
+        "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.scss",
+        "ext": ".scss",
+        "mtime": 1593030706107.616
+      },
+      {
+        "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592286415545.628
+      },
+      {
+        "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
+        "ext": ".ts",
+        "mtime": 1593117224176.7085
+      },
+      {
         "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
         "ext": ".ts",
         "mtime": 1592283579321.803
@@ -3867,7 +4178,7 @@
       {
         "file": "libs/shop/ui/src/lib/shop-ui.module.ts",
         "ext": ".ts",
-        "mtime": 1592518409507.9832
+        "mtime": 1593092062577.4763
       },
       {
         "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.html",

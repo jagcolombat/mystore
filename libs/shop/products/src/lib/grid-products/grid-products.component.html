@@ -1,1 +1,1 @@
-<ecommerce-product *ngFor="let prod of products" [product]="prod"></ecommerce-product>
+<ecommerce-product *ngFor="let prod of products" [product]="prod" (evAdd2Cart)="add2Cart($event)"></ecommerce-product>

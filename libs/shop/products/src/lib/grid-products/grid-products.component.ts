@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductService } from '@ecommerce/shop/data-access';
+import { CartDataService, ProductService } from '@ecommerce/shop/data-access';
 import { ProductDto, ProductListDto } from '@ecommerce/shop/share/dto';
 
 @Component({
@@ -12,7 +12,7 @@ export class GridProductsComponent implements OnInit {
   products: ProductListDto | ProductDto[];
   @Input() showImgProd: boolean;
 
-  constructor(private prodService: ProductService) {
+  constructor(private prodService: ProductService, private cartData: CartDataService) {
     this.prodService.getProducts().subscribe(
       next => {
         console.log('products', next);
@@ -24,6 +24,11 @@ export class GridProductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  add2Cart(prod: ProductDto){
+    console.log('add2Cart', prod);
+    this.cartData.addItem(prod);
   }
 
 }

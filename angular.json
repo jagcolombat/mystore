@@ -492,6 +492,38 @@
         }
       },
       "schematics": {}
+    },
+    "shop-cart": {
+      "projectType": "library",
+      "root": "libs/shop/cart",
+      "sourceRoot": "libs/shop/cart/src",
+      "prefix": "ecommerce",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shop/cart/tsconfig.lib.json",
+              "libs/shop/cart/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shop/cart/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shop/cart/jest.config.js",
+            "tsConfig": "libs/shop/cart/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shop/cart/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

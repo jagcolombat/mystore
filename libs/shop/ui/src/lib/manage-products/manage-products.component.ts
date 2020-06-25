@@ -1,8 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ProductService } from '@ecommerce/shop/data-access';
 import { ProductDto } from '@ecommerce/shop/share/dto';
-import { ItemAction } from '../utils/item-action';
-import { ItemActionEnum } from '../utils/item-action.enum';
+import { ItemAction, ItemActionEnum } from '@ecommerce/shop/utils';
 
 @Component({
   selector: 'ecommerce-manage-products',
@@ -10,17 +9,20 @@ import { ItemActionEnum } from '../utils/item-action.enum';
   styleUrls: ['./manage-products.component.scss']
 })
 export class ManageProductsComponent implements OnInit {
+
+  @Input() title = "List of Products";
+  @Input() cart: boolean;
   @Input() data: any;
   @Input() addProd: ItemAction;
   @Output() evEditProd= new EventEmitter<ProductDto[]>();
   @Output() evDelProd= new EventEmitter<ProductDto[]>();
-  columDefs: any;
+  columnDefs: any;
   editBtnDisabled = true;
   delBtnDisabled = true;
   selectedProds: any[];
 
   constructor() {
-    this.columDefs = [
+    this.columnDefs = [
       {
         field: 'name',
         title: 'Name',
@@ -41,6 +43,17 @@ export class ManageProductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if(this.cart) {
+      this.columnDefs.push({
+        field: 'quantity',
+        title: 'Quantity',
+        width: 50,
+        type: 'numericColumn',
+        cellEditor: 'numericEditor',
+        editable: true,
+      });
+    }
+
   }
 
   selProduct(selectedProds: any[]) {

@@ -1,0 +1,4 @@
+<ecommerce-manage-products [data]="items" [addProd]="item" (evEditProd)="editProd($event)"
+                           (evDelProd)="deleteProduct($event)" [cart]="true">
+</ecommerce-manage-products>
+<ecommerce-quantity (evUpdateProd)="updateItem($event)" [prod2Edit]="prod2Edit"></ecommerce-quantity>

@@ -8,8 +8,8 @@ import { AuthenticationService } from '@ecommerce/shared/security';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
-  options = ['Products'];
+  options = [];
+  optionsPublic = ['Products', 'Cart'];
   optionsSignIn = ['Admin', 'Logout'];
   optionsSignOut = ['Login'];
   opSelected: string;
@@ -35,9 +35,9 @@ export class MainComponent implements OnInit {
   private buildOptions() {
     this.options.splice(0);
     if(this.authService.currentUserValue){
-      this.options.push('Products',...this.optionsSignIn);
+      this.options.push(...this.optionsPublic,...this.optionsSignIn);
     } else {
-      this.options.push('Products',...this.optionsSignOut);
+      this.options.push(...this.optionsPublic,...this.optionsSignOut);
     }
   }
 }

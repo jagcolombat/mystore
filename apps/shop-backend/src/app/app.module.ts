@@ -10,6 +10,7 @@ import { AuthModule } from './auth';
 import { AppController } from './app.controller';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { environment } from '@env/shop-backend/environment';
 
 @Module({
   controllers: [AppController],
@@ -19,11 +20,11 @@ import { join } from 'path';
     AuthModule,
     TypeOrmModule.forRoot({
       "type": "mysql",
-      "host": "sql3.freemysqlhosting.net",
-      "port": 3306,
-      "username": "sql3350637",
-      "password": "J9ZvzNH67d",
-      "database": "sql3350637",
+      "port": environment.dbPort,
+      "host": environment.dbHost,
+      "username": environment.dbUser,
+      "password": environment.dbPass,
+      "database": environment.dbDB,
       "synchronize": true,
       "logging": true,
       "entities": [

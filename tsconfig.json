@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@env/shop/*": ["apps/shop/src/environments/*"],
+      "@env/shop-backend/*": ["apps/shop-backend/src/environments/*"],
       "@ecommerce/shop-backend/dto": ["apps/shop-backend/src/app/shop/dto"],
       "@ecommerce/shop/products": ["libs/shop/products/src/index.ts"],
       "@ecommerce/shared/material": ["libs/shared/material/src/index.ts"],
@@ -27,7 +28,8 @@
       "@ecommerce/shared/security": ["libs/shared/security/src/index.ts"],
       "@ecommerce/shared/api": ["libs/shared/api/src/index.ts"],
       "@ecommerce/shop/admin": ["libs/shop/admin/src/index.ts"],
-      "@ecommerce/shop/share/dto": ["libs/shop/share/dto/src/index.ts"]
+      "@ecommerce/shop/share/dto": ["libs/shop/share/dto/src/index.ts"],
+      "@ecommerce/shop/cart": ["libs/shop/cart/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

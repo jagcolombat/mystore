@@ -1,4 +1,4 @@
-import { ItemActionEnum } from './item-action.enum';
+import { ItemActionEnum } from '../enum/item-action.enum';
 import { ProductDto } from '@ecommerce/shop/share/dto';
 
 export interface ItemAction {

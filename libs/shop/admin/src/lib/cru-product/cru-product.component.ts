@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
-import { ProductService } from '@ecommerce/shop/data-access';
 import { AddProductDto, ProductDto } from '@ecommerce/shop/share/dto';
 
 @Component({
@@ -18,7 +17,13 @@ export class CruProductComponent implements OnInit, OnChanges {
   form: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
+      name: ['', Validators.required],
+      price: ['', [Validators.required, Validators.min(0), Validators.max(1000)]],
+      description: ['', Validators.maxLength(250)]
+    })
+  }
 
   ngOnChanges(sc: SimpleChanges){
     console.log('changes', sc);
@@ -38,11 +43,6 @@ export class CruProductComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     console.log('ngOnInit', this.prod2Edit);
-    this.form = this.formBuilder.group({
-      name: ['', Validators.required],
-      price: ['', [Validators.required, Validators.min(0), Validators.max(1000)]],
-      description: ['', Validators.maxLength(250)]
-    })
   }
 
   get f() { return this.form.controls; }

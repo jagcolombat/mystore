@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex: 1;
+  margin: 10px 20px;
+  justify-content: space-between;
+}
+
+ecommerce-cart+ecommerce-cart {
+  margin-left: 10px;
+}
+
+ecommerce-manage-products {
+  display: flex;
+  width: 70%;
+  //flex-direction: column;
+}
+
+ecommerce-quantity {
+  display: flex;
+  width: 28%;
+  flex-direction: column;
+}

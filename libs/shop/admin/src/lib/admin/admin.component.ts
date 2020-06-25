@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AddProductDto, ProductDto } from '@ecommerce/shop/share/dto';
-import { ItemAction } from '../utils/item-action';
-import { ItemActionEnum } from '../utils/item-action.enum';
+import { ItemAction, ItemActionEnum } from '@ecommerce/shop/utils';
 import { ProductService } from '@ecommerce/shop/data-access';
 
 @Component({

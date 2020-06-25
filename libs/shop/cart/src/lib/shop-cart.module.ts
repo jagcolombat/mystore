@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { AdminComponent } from './admin/admin.component';
+import { CartComponent } from './cart/cart.component';
 import { ShopUiModule } from '@ecommerce/shop/ui';
+import { QuantityComponent } from './quantity/quantity.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CruProductComponent } from './cru-product/cru-product.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild([
-       {path: '', component: AdminComponent}
-    ]),
     ShopUiModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forChild([
+       {path: '', pathMatch: 'full', component: CartComponent}
+    ]),
   ],
-  declarations: [AdminComponent, CruProductComponent],
+  declarations: [CartComponent, QuantityComponent],
 })
-export class ShopAdminModule {}
+export class ShopCartModule {}

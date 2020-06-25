@@ -31,6 +31,11 @@ import { AuthGuard } from '@ecommerce/shared/security';
               .then(m => m.SharedSecurityModule)
           },
           {
+            path: 'cart',
+            loadChildren: ( ) => import('@ecommerce/shop/cart')
+              .then(m => m.ShopCartModule)
+          },
+          {
             path: 'logout', redirectTo: 'products'
           }
         ]

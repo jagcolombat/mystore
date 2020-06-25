@@ -3,7 +3,7 @@
   [gridOptions]="gridOptions"
   [context]="context"
   [columnDefs]="columnDefs"
-  [rowMultiSelectWithClick]="selectableProd"
-  [suppressRowClickSelection]="!selectableProd"
-  (gridReady)= "onGridReady($event)">
+  (gridReady)= "onGridReady($event)"
+  [pinnedBottomRowData]="bottomData"
+>
 </ag-grid-angular>

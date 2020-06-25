@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ProductDto } from '@ecommerce/shop/share/dto';
 
 @Component({
   selector: 'ecommerce-product',
@@ -7,16 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  @Input() product  = {
-    name: 'Rice',
-    price: 4,
-    description: 'Imported from Viet Nam'
-  }
+  @Input() product: ProductDto;
   @Input() showImg = true;
+  @Output() evAdd2Cart = new EventEmitter<ProductDto>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  add2Cart(){
+    this.evAdd2Cart.emit(this.product);
   }
 
 }

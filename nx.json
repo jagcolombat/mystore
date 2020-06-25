@@ -58,6 +58,9 @@
     },
     "shop-share-dto": {
       "tags": []
+    },
+    "shop-cart": {
+      "tags": []
     }
   }
 }
