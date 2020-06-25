@@ -1600,7 +1600,7 @@
             {
               "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
               "ext": ".ts",
-              "mtime": 1593119748608.9326
+              "mtime": 1593125463039.553
             },
             {
               "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -1665,7 +1665,7 @@
             {
               "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
               "ext": ".ts",
-              "mtime": 1593117224176.7085
+              "mtime": 1593125463028.5833
             },
             {
               "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
@@ -2876,11 +2876,6 @@
           "type": "static",
           "source": "shop-ui",
           "target": "shop-utils"
-        },
-        {
-          "type": "static",
-          "source": "shop-ui",
-          "target": "shop-data-access"
         },
         {
           "type": "static",
@@ -4103,7 +4098,7 @@
       {
         "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
         "ext": ".ts",
-        "mtime": 1593119748608.9326
+        "mtime": 1593125463039.553
       },
       {
         "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -4168,7 +4163,7 @@
       {
         "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
         "ext": ".ts",
-        "mtime": 1593117224176.7085
+        "mtime": 1593125463028.5833
       },
       {
         "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",

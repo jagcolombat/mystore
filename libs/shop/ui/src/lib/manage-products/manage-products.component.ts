@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ProductService } from '@ecommerce/shop/data-access';
 import { ProductDto } from '@ecommerce/shop/share/dto';
-import { ItemAction, ItemActionEnum } from '@ecommerce/shop/utils';
+import { ItemAction } from '@ecommerce/shop/utils';
 
 @Component({
   selector: 'ecommerce-manage-products',

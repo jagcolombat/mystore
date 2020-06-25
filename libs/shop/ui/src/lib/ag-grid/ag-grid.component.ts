@@ -2,8 +2,7 @@ import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, S
 import { GridApi, GridOptions } from 'ag-grid-community';
 import { Subscription } from 'rxjs';
 import { CustomHeaderComponent } from './custom-header.component';
-import { ProductGridDef } from '@ecommerce/shop/utils';
-import { ItemAction, ItemActionEnum } from '@ecommerce/shop/utils';
+import { ItemAction, ItemActionEnum, ProductGridDef } from '@ecommerce/shop/utils';
 
 @Component({
   selector: 'ecommerce-ag-grid',
