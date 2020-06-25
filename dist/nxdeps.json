@@ -669,7 +669,7 @@
             {
               "file": "apps/shop-backend/src/app/app.module.ts",
               "ext": ".ts",
-              "mtime": 1593069820218.1133
+              "mtime": 1593074450637.1255
             },
             {
               "file": "apps/shop-backend/src/app/app.service.spec.ts",
@@ -3240,7 +3240,7 @@
       {
         "file": "apps/shop-backend/src/app/app.module.ts",
         "ext": ".ts",
-        "mtime": 1593069820218.1133
+        "mtime": 1593074450637.1255
       },
       {
         "file": "apps/shop-backend/src/app/app.service.spec.ts",

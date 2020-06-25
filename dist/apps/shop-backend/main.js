@@ -893,11 +893,11 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _auth__WEBPACK_IMPORTED_MODULE_7__[/* AuthModule */ "a"],
             _nestjs_typeorm__WEBPACK_IMPORTED_MODULE_2__["TypeOrmModule"].forRoot({
                 "type": "mysql",
-                "host": "localhost",
+                "host": "sql3.freemysqlhosting.net",
                 "port": 3306,
-                "username": "shop",
-                "password": "sh0p",
-                "database": "shop",
+                "username": "sql3350637",
+                "password": "J9ZvzNH67d",
+                "database": "sql3350637",
                 "synchronize": true,
                 "logging": true,
                 "entities": [

@@ -19,11 +19,11 @@ import { join } from 'path';
     AuthModule,
     TypeOrmModule.forRoot({
       "type": "mysql",
-      "host": "localhost",
+      "host": "sql3.freemysqlhosting.net",
       "port": 3306,
-      "username": "shop",
-      "password": "sh0p",
-      "database": "shop",
+      "username": "sql3350637",
+      "password": "J9ZvzNH67d",
+      "database": "sql3350637",
       "synchronize": true,
       "logging": true,
       "entities": [
