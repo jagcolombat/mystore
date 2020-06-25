@@ -9,15 +9,15 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { getDbConnection, getDbConnectionOptions } from './shared/utils';
 
-const PORT = process.env.PORT || 3333;
+const port = process.env.PORT || 3333;
 
 async function bootstrap() {
 
   const app = await NestFactory.create(AppModule, { cors: true});
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
-  await app.listen(PORT, () => {
-    Logger.log('Listening at http://localhost:' + PORT + '/' + globalPrefix, 'Bootstrap');
+  await app.listen(port, () => {
+    Logger.log('Listening at http://localhost:' + port + '/' + globalPrefix, 'Bootstrap');
   });
 
   /**

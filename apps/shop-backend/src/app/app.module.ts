@@ -8,6 +8,8 @@ import { UserEntity } from './users/entity/user.entity';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth';
 import { AppController } from './app.controller';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   controllers: [AppController],
@@ -28,6 +30,10 @@ import { AppController } from './app.controller';
         ProductEntity,
         UserEntity
       ]
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'shop'),
+      exclude: ['/shop-backend*']
     })
   ]
 })
