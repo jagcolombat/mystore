@@ -1,0 +1,4031 @@
+{
+  "projectGraph": {
+    "nodes": {
+      "shop-data-access": {
+        "name": "shop-data-access",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/data-access",
+          "sourceRoot": "libs/shop/data-access/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/data-access/tsconfig.lib.json",
+                  "libs/shop/data-access/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/data-access/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/data-access/jest.config.js",
+                "tsConfig": "libs/shop/data-access/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/data-access/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/data-access/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592200085380.882
+            },
+            {
+              "file": "libs/shop/data-access/README.md",
+              "ext": ".md",
+              "mtime": 1592200085370.9087
+            },
+            {
+              "file": "libs/shop/data-access/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592517288470.5645
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/rest/product/product.service.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592354087667
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/rest/product/product.service.ts",
+              "ext": ".ts",
+              "mtime": 1592811811688.8281
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/rest/shop-rest.service.ts",
+              "ext": ".ts",
+              "mtime": 1592811983944.274
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/shop-data-access.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592200085377.8872
+            },
+            {
+              "file": "libs/shop/data-access/src/lib/shop-data-access.module.ts",
+              "ext": ".ts",
+              "mtime": 1592517288456.6611
+            },
+            {
+              "file": "libs/shop/data-access/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592200085388.8618
+            },
+            {
+              "file": "libs/shop/data-access/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592200085379.8838
+            },
+            {
+              "file": "libs/shop/data-access/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592200085371.9028
+            },
+            {
+              "file": "libs/shop/data-access/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592200085386.8645
+            },
+            {
+              "file": "libs/shop/data-access/tslint.json",
+              "ext": ".json",
+              "mtime": 1592200085373.9006
+            }
+          ]
+        }
+      },
+      "shared-material": {
+        "name": "shared-material",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shared/material",
+          "sourceRoot": "libs/shared/material/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shared/material/tsconfig.lib.json",
+                  "libs/shared/material/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shared/material/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shared/material/jest.config.js",
+                "tsConfig": "libs/shared/material/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shared/material/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shared/material/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592199929388.0693
+            },
+            {
+              "file": "libs/shared/material/README.md",
+              "ext": ".md",
+              "mtime": 1592199929379.0935
+            },
+            {
+              "file": "libs/shared/material/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592199929383.1035
+            },
+            {
+              "file": "libs/shared/material/src/lib/shared-material.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592199929385.0745
+            },
+            {
+              "file": "libs/shared/material/src/lib/shared-material.module.ts",
+              "ext": ".ts",
+              "mtime": 1593021781700.0935
+            },
+            {
+              "file": "libs/shared/material/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592199929395.047
+            },
+            {
+              "file": "libs/shared/material/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592199929386.0725
+            },
+            {
+              "file": "libs/shared/material/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592199929381.0857
+            },
+            {
+              "file": "libs/shared/material/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592199929394.0508
+            },
+            {
+              "file": "libs/shared/material/tslint.json",
+              "ext": ".json",
+              "mtime": 1592199929382.1152
+            }
+          ]
+        }
+      },
+      "shared-security": {
+        "name": "shared-security",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shared/security",
+          "sourceRoot": "libs/shared/security/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shared/security/tsconfig.lib.json",
+                  "libs/shared/security/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shared/security/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shared/security/jest.config.js",
+                "tsConfig": "libs/shared/security/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shared/security/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shared/security/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592285695562.2134
+            },
+            {
+              "file": "libs/shared/security/README.md",
+              "ext": ".md",
+              "mtime": 1592285695552.2402
+            },
+            {
+              "file": "libs/shared/security/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1593037770504.7256
+            },
+            {
+              "file": "libs/shared/security/src/lib/guards/auth.guard.ts",
+              "ext": ".ts",
+              "mtime": 1593037886684.257
+            },
+            {
+              "file": "libs/shared/security/src/lib/interceptors/error.interceptor.ts",
+              "ext": ".ts",
+              "mtime": 1593018935698.2559
+            },
+            {
+              "file": "libs/shared/security/src/lib/interceptors/jwt.interceptor.ts",
+              "ext": ".ts",
+              "mtime": 1593018935683.2307
+            },
+            {
+              "file": "libs/shared/security/src/lib/login/login.component.html",
+              "ext": ".html",
+              "mtime": 1593029834890.0503
+            },
+            {
+              "file": "libs/shared/security/src/lib/login/login.component.scss",
+              "ext": ".scss",
+              "mtime": 1593030587976.9646
+            },
+            {
+              "file": "libs/shared/security/src/lib/login/login.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285837306.5305
+            },
+            {
+              "file": "libs/shared/security/src/lib/login/login.component.ts",
+              "ext": ".ts",
+              "mtime": 1593030287595.4592
+            },
+            {
+              "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592931276924.8855
+            },
+            {
+              "file": "libs/shared/security/src/lib/services/authentication.service.ts",
+              "ext": ".ts",
+              "mtime": 1593033790136.1477
+            },
+            {
+              "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285695559.22
+            },
+            {
+              "file": "libs/shared/security/src/lib/shared-security.module.ts",
+              "ext": ".ts",
+              "mtime": 1592974152999.1726
+            },
+            {
+              "file": "libs/shared/security/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592285695570.2007
+            },
+            {
+              "file": "libs/shared/security/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592285695561.2146
+            },
+            {
+              "file": "libs/shared/security/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592285695554.234
+            },
+            {
+              "file": "libs/shared/security/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592285695568.2256
+            },
+            {
+              "file": "libs/shared/security/tslint.json",
+              "ext": ".json",
+              "mtime": 1592285695555.232
+            }
+          ]
+        }
+      },
+      "shop-share-dto": {
+        "name": "shop-share-dto",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/share/dto",
+          "sourceRoot": "libs/shop/share/dto/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/share/dto/tsconfig.lib.json",
+                  "libs/shop/share/dto/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/share/dto/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/share/dto/jest.config.js",
+                "tsConfig": "libs/shop/share/dto/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/share/dto/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {},
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/share/dto/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592444674004.891
+            },
+            {
+              "file": "libs/shop/share/dto/README.md",
+              "ext": ".md",
+              "mtime": 1592444673994.9163
+            },
+            {
+              "file": "libs/shop/share/dto/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592444960146.097
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/product/index.ts",
+              "ext": ".ts",
+              "mtime": 1592355726387
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/product/product.create.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592257576716
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/product/product.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592280154029
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/product/product.list.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592257576701
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/product/product.search.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592355726395
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/shop-share-dto.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592444674002.8972
+            },
+            {
+              "file": "libs/shop/share/dto/src/lib/shop-share-dto.module.ts",
+              "ext": ".ts",
+              "mtime": 1592444674001.8982
+            },
+            {
+              "file": "libs/shop/share/dto/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592444674007.8845
+            },
+            {
+              "file": "libs/shop/share/dto/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592444674003.8938
+            },
+            {
+              "file": "libs/shop/share/dto/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592444673996.912
+            },
+            {
+              "file": "libs/shop/share/dto/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592444674006.8865
+            },
+            {
+              "file": "libs/shop/share/dto/tslint.json",
+              "ext": ".json",
+              "mtime": 1592444673997.933
+            }
+          ]
+        }
+      },
+      "shop-products": {
+        "name": "shop-products",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/products",
+          "sourceRoot": "libs/shop/products/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/products/tsconfig.lib.json",
+                  "libs/shop/products/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/products/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/products/jest.config.js",
+                "tsConfig": "libs/shop/products/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/products/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/products/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592199788792.3835
+            },
+            {
+              "file": "libs/shop/products/README.md",
+              "ext": ".md",
+              "mtime": 1592199788782.411
+            },
+            {
+              "file": "libs/shop/products/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592517288386.8281
+            },
+            {
+              "file": "libs/shop/products/src/lib/grid-products/grid-products.component.html",
+              "ext": ".html",
+              "mtime": 1592371541981.194
+            },
+            {
+              "file": "libs/shop/products/src/lib/grid-products/grid-products.component.scss",
+              "ext": ".scss",
+              "mtime": 1592814229494.963
+            },
+            {
+              "file": "libs/shop/products/src/lib/grid-products/grid-products.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592286072142.4734
+            },
+            {
+              "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
+              "ext": ".ts",
+              "mtime": 1592517288492.943
+            },
+            {
+              "file": "libs/shop/products/src/lib/product/product.component.html",
+              "ext": ".html",
+              "mtime": 1592814681249.567
+            },
+            {
+              "file": "libs/shop/products/src/lib/product/product.component.scss",
+              "ext": ".scss",
+              "mtime": 1593031416036.108
+            },
+            {
+              "file": "libs/shop/products/src/lib/product/product.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592286016422.3755
+            },
+            {
+              "file": "libs/shop/products/src/lib/product/product.component.ts",
+              "ext": ".ts",
+              "mtime": 1592372739009.3335
+            },
+            {
+              "file": "libs/shop/products/src/lib/shop-products.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592199788790.3909
+            },
+            {
+              "file": "libs/shop/products/src/lib/shop-products.module.ts",
+              "ext": ".ts",
+              "mtime": 1592544668552.6716
+            },
+            {
+              "file": "libs/shop/products/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592199788799.365
+            },
+            {
+              "file": "libs/shop/products/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592199788791.3877
+            },
+            {
+              "file": "libs/shop/products/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592199788784.4048
+            },
+            {
+              "file": "libs/shop/products/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592199788798.367
+            },
+            {
+              "file": "libs/shop/products/tslint.json",
+              "ext": ".json",
+              "mtime": 1592199788785.403
+            }
+          ]
+        }
+      },
+      "shop-backend": {
+        "name": "shop-backend",
+        "type": "app",
+        "data": {
+          "root": "apps/shop-backend",
+          "sourceRoot": "apps/shop-backend/src",
+          "projectType": "application",
+          "prefix": "shop-backend",
+          "schematics": {},
+          "architect": {
+            "build": {
+              "builder": "@nrwl/node:build",
+              "options": {
+                "outputPath": "dist/apps/shop-backend",
+                "main": "apps/shop-backend/src/main.ts",
+                "tsConfig": "apps/shop-backend/tsconfig.app.json",
+                "assets": [
+                  "apps/shop-backend/src/assets"
+                ]
+              },
+              "configurations": {
+                "production": {
+                  "optimization": true,
+                  "extractLicenses": true,
+                  "inspect": false,
+                  "fileReplacements": [
+                    {
+                      "replace": "apps/shop-backend/src/environments/environment.ts",
+                      "with": "apps/shop-backend/src/environments/environment.prod.ts"
+                    }
+                  ]
+                }
+              }
+            },
+            "serve": {
+              "builder": "@nrwl/node:execute",
+              "options": {
+                "buildTarget": "shop-backend:build"
+              }
+            },
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "apps/shop-backend/tsconfig.app.json",
+                  "apps/shop-backend/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/shop-backend/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "apps/shop-backend/jest.config.js",
+                "tsConfig": "apps/shop-backend/tsconfig.spec.json",
+                "passWithNoTests": true
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/shop-backend/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592200574739.734
+            },
+            {
+              "file": "apps/shop-backend/src/app/.gitkeep",
+              "ext": "",
+              "mtime": 1592200574734.746
+            },
+            {
+              "file": "apps/shop-backend/src/app/app.controller.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592200574742.7244
+            },
+            {
+              "file": "apps/shop-backend/src/app/app.controller.ts",
+              "ext": ".ts",
+              "mtime": 1593033771259.5488
+            },
+            {
+              "file": "apps/shop-backend/src/app/app.module.ts",
+              "ext": ".ts",
+              "mtime": 1593069820218.1133
+            },
+            {
+              "file": "apps/shop-backend/src/app/app.service.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592200574745.9868
+            },
+            {
+              "file": "apps/shop-backend/src/app/app.service.ts",
+              "ext": ".ts",
+              "mtime": 1592200574751.865
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/auth.module.ts",
+              "ext": ".ts",
+              "mtime": 1563744894000
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/auth.service.ts",
+              "ext": ".ts",
+              "mtime": 1563744894000
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/constants.ts",
+              "ext": ".ts",
+              "mtime": 1563744894000
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/index.ts",
+              "ext": ".ts",
+              "mtime": 1563744894000
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/jwt.strategy.ts",
+              "ext": ".ts",
+              "mtime": 1563744894000
+            },
+            {
+              "file": "apps/shop-backend/src/app/auth/local.strategy.ts",
+              "ext": ".ts",
+              "mtime": 1593029275801.052
+            },
+            {
+              "file": "apps/shop-backend/src/app/shop/entity/product.entity.ts",
+              "ext": ".ts",
+              "mtime": 1592265895684.0615
+            },
+            {
+              "file": "apps/shop-backend/src/app/shop/mapper.ts",
+              "ext": ".ts",
+              "mtime": 1593036902906.2742
+            },
+            {
+              "file": "apps/shop-backend/src/app/shop/shop.controller.ts",
+              "ext": ".ts",
+              "mtime": 1593036902919.2898
+            },
+            {
+              "file": "apps/shop-backend/src/app/shop/shop.module.ts",
+              "ext": ".ts",
+              "mtime": 1592264187215.6118
+            },
+            {
+              "file": "apps/shop-backend/src/app/shop/shop.service.ts",
+              "ext": ".ts",
+              "mtime": 1593036902913.22
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/dto/index.ts",
+              "ext": ".ts",
+              "mtime": 1592893055414.3667
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/dto/user.create.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592886409146.0908
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/dto/user.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592883982637.9492
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/dto/user.list.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592889455679.2075
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/dto/user.search.dto.ts",
+              "ext": ".ts",
+              "mtime": 1592893055444.2886
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/entity/user.entity.ts",
+              "ext": ".ts",
+              "mtime": 1592878718362.0278
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/index.ts",
+              "ext": ".ts",
+              "mtime": 1592893681656.0562
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/mapper.ts",
+              "ext": ".ts",
+              "mtime": 1592886409195.4695
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/user.controller.ts",
+              "ext": ".ts",
+              "mtime": 1592893681645.0857
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/users.module.ts",
+              "ext": ".ts",
+              "mtime": 1592893694555.952
+            },
+            {
+              "file": "apps/shop-backend/src/app/users/users.service.ts",
+              "ext": ".ts",
+              "mtime": 1592889455688.1838
+            },
+            {
+              "file": "apps/shop-backend/src/assets/.gitkeep",
+              "ext": "",
+              "mtime": 1592200574735.7427
+            },
+            {
+              "file": "apps/shop-backend/src/environments/environment.prod.ts",
+              "ext": ".ts",
+              "mtime": 1592200574737.7383
+            },
+            {
+              "file": "apps/shop-backend/src/environments/environment.ts",
+              "ext": ".ts",
+              "mtime": 1592200574738.7368
+            },
+            {
+              "file": "apps/shop-backend/src/main.ts",
+              "ext": ".ts",
+              "mtime": 1593069820197.1692
+            },
+            {
+              "file": "apps/shop-backend/src/shared/utils.ts",
+              "ext": ".ts",
+              "mtime": 1592287205483.8381
+            },
+            {
+              "file": "apps/shop-backend/tsconfig.app.json",
+              "ext": ".json",
+              "mtime": 1592200574730.7578
+            },
+            {
+              "file": "apps/shop-backend/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592200574731.755
+            },
+            {
+              "file": "apps/shop-backend/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592200574740.7307
+            },
+            {
+              "file": "apps/shop-backend/tslint.json",
+              "ext": ".json",
+              "mtime": 1592200574729.76
+            }
+          ]
+        }
+      },
+      "shop-layout": {
+        "name": "shop-layout",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/layout",
+          "sourceRoot": "libs/shop/layout/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/layout/tsconfig.lib.json",
+                  "libs/shop/layout/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/layout/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/layout/jest.config.js",
+                "tsConfig": "libs/shop/layout/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/layout/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/layout/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592283535576.8582
+            },
+            {
+              "file": "libs/shop/layout/README.md",
+              "ext": ".md",
+              "mtime": 1592283535567.8823
+            },
+            {
+              "file": "libs/shop/layout/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592283535572.8691
+            },
+            {
+              "file": "libs/shop/layout/src/lib/main/main.component.html",
+              "ext": ".html",
+              "mtime": 1592983125676.3027
+            },
+            {
+              "file": "libs/shop/layout/src/lib/main/main.component.scss",
+              "ext": ".scss",
+              "mtime": 1592346537225.5393
+            },
+            {
+              "file": "libs/shop/layout/src/lib/main/main.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285459827.7537
+            },
+            {
+              "file": "libs/shop/layout/src/lib/main/main.component.ts",
+              "ext": ".ts",
+              "mtime": 1592984123968.522
+            },
+            {
+              "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592283535574.8645
+            },
+            {
+              "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
+              "ext": ".ts",
+              "mtime": 1593037770493.755
+            },
+            {
+              "file": "libs/shop/layout/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592283535584.837
+            },
+            {
+              "file": "libs/shop/layout/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592283535575.8608
+            },
+            {
+              "file": "libs/shop/layout/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592283535569.878
+            },
+            {
+              "file": "libs/shop/layout/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592283535582.8413
+            },
+            {
+              "file": "libs/shop/layout/tslint.json",
+              "ext": ".json",
+              "mtime": 1592283535570.875
+            }
+          ]
+        }
+      },
+      "shop-utils": {
+        "name": "shop-utils",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/utils",
+          "sourceRoot": "libs/shop/utils/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/utils/tsconfig.lib.json",
+                  "libs/shop/utils/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/utils/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/utils/jest.config.js",
+                "tsConfig": "libs/shop/utils/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/utils/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/utils/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592200049907.5007
+            },
+            {
+              "file": "libs/shop/utils/README.md",
+              "ext": ".md",
+              "mtime": 1592200049893.552
+            },
+            {
+              "file": "libs/shop/utils/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592516036598.4165
+            },
+            {
+              "file": "libs/shop/utils/src/lib/shop-utils.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592200049905.5056
+            },
+            {
+              "file": "libs/shop/utils/src/lib/shop-utils.module.ts",
+              "ext": ".ts",
+              "mtime": 1592200049903.5479
+            },
+            {
+              "file": "libs/shop/utils/src/lib/types/index.ts",
+              "ext": ".ts",
+              "mtime": 1592516197831.6294
+            },
+            {
+              "file": "libs/shop/utils/src/lib/types/product-grid-def.ts",
+              "ext": ".ts",
+              "mtime": 1592516036621.2505
+            },
+            {
+              "file": "libs/shop/utils/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592200049909.495
+            },
+            {
+              "file": "libs/shop/utils/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592200049906.5034
+            },
+            {
+              "file": "libs/shop/utils/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592200049894.5378
+            },
+            {
+              "file": "libs/shop/utils/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592200049908.4983
+            },
+            {
+              "file": "libs/shop/utils/tslint.json",
+              "ext": ".json",
+              "mtime": 1592200049895.5334
+            }
+          ]
+        }
+      },
+      "shared-api": {
+        "name": "shared-api",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shared/api",
+          "sourceRoot": "libs/shared/api/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shared/api/tsconfig.lib.json",
+                  "libs/shared/api/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shared/api/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shared/api/jest.config.js",
+                "tsConfig": "libs/shared/api/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shared/api/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shared/api/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592352719325.2307
+            },
+            {
+              "file": "libs/shared/api/README.md",
+              "ext": ".md",
+              "mtime": 1592352719314.2605
+            },
+            {
+              "file": "libs/shared/api/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592353396578.8855
+            },
+            {
+              "file": "libs/shared/api/src/lib/api.service.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592352841517.939
+            },
+            {
+              "file": "libs/shared/api/src/lib/api.service.ts",
+              "ext": ".ts",
+              "mtime": 1592811965592.3162
+            },
+            {
+              "file": "libs/shared/api/src/lib/shared-api.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592352719322.2388
+            },
+            {
+              "file": "libs/shared/api/src/lib/shared-api.module.ts",
+              "ext": ".ts",
+              "mtime": 1592352946648.1992
+            },
+            {
+              "file": "libs/shared/api/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592352719333.2107
+            },
+            {
+              "file": "libs/shared/api/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592352719324.2334
+            },
+            {
+              "file": "libs/shared/api/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592352719316.2551
+            },
+            {
+              "file": "libs/shared/api/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592352719331.215
+            },
+            {
+              "file": "libs/shared/api/tslint.json",
+              "ext": ".json",
+              "mtime": 1592352719318.2493
+            }
+          ]
+        }
+      },
+      "shop-admin": {
+        "name": "shop-admin",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/admin",
+          "sourceRoot": "libs/shop/admin/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/admin/tsconfig.lib.json",
+                  "libs/shop/admin/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/admin/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/admin/jest.config.js",
+                "tsConfig": "libs/shop/admin/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/admin/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/admin/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592440248251.1206
+            },
+            {
+              "file": "libs/shop/admin/README.md",
+              "ext": ".md",
+              "mtime": 1592440248236.2112
+            },
+            {
+              "file": "libs/shop/admin/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592440248246.1343
+            },
+            {
+              "file": "libs/shop/admin/src/lib/admin/admin.component.html",
+              "ext": ".html",
+              "mtime": 1593048388082.847
+            },
+            {
+              "file": "libs/shop/admin/src/lib/admin/admin.component.scss",
+              "ext": ".scss",
+              "mtime": 1592627891422.639
+            },
+            {
+              "file": "libs/shop/admin/src/lib/admin/admin.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592443479062.3823
+            },
+            {
+              "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
+              "ext": ".ts",
+              "mtime": 1593068369195.4797
+            },
+            {
+              "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
+              "ext": ".html",
+              "mtime": 1593045228634.7202
+            },
+            {
+              "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.scss",
+              "ext": ".scss",
+              "mtime": 1593030538540.2222
+            },
+            {
+              "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592286190919.7183
+            },
+            {
+              "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
+              "ext": ".ts",
+              "mtime": 1593048541955.142
+            },
+            {
+              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.html",
+              "ext": ".html",
+              "mtime": 1592803596217.9585
+            },
+            {
+              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.scss",
+              "ext": ".scss",
+              "mtime": 1593030706107.616
+            },
+            {
+              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592286415545.628
+            },
+            {
+              "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.ts",
+              "ext": ".ts",
+              "mtime": 1593048467767.7888
+            },
+            {
+              "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592440248248.1277
+            },
+            {
+              "file": "libs/shop/admin/src/lib/shop-admin.module.ts",
+              "ext": ".ts",
+              "mtime": 1592596269815.4502
+            },
+            {
+              "file": "libs/shop/admin/src/lib/utils/item-action.enum.ts",
+              "ext": ".ts",
+              "mtime": 1592803596190.0337
+            },
+            {
+              "file": "libs/shop/admin/src/lib/utils/item-action.ts",
+              "ext": ".ts",
+              "mtime": 1592803596239.9001
+            },
+            {
+              "file": "libs/shop/admin/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592440248255.108
+            },
+            {
+              "file": "libs/shop/admin/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592440248249.1267
+            },
+            {
+              "file": "libs/shop/admin/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592440248243.1401
+            },
+            {
+              "file": "libs/shop/admin/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592440248253.114
+            },
+            {
+              "file": "libs/shop/admin/tslint.json",
+              "ext": ".json",
+              "mtime": 1592440248244.138
+            }
+          ]
+        }
+      },
+      "shop-e2e": {
+        "name": "shop-e2e",
+        "type": "e2e",
+        "data": {
+          "root": "apps/shop-e2e",
+          "sourceRoot": "apps/shop-e2e/src",
+          "projectType": "application",
+          "architect": {
+            "e2e": {
+              "builder": "@nrwl/cypress:cypress",
+              "options": {
+                "cypressConfig": "apps/shop-e2e/cypress.json",
+                "tsConfig": "apps/shop-e2e/tsconfig.e2e.json",
+                "devServerTarget": "shop:serve"
+              },
+              "configurations": {
+                "production": {
+                  "devServerTarget": "shop:serve:production"
+                }
+              }
+            },
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "apps/shop-e2e/tsconfig.e2e.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/shop-e2e/**"
+                ]
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/shop-e2e/cypress.json",
+              "ext": ".json",
+              "mtime": 1592199652374.2954
+            },
+            {
+              "file": "apps/shop-e2e/src/fixtures/example.json",
+              "ext": ".json",
+              "mtime": 1592199652378.2856
+            },
+            {
+              "file": "apps/shop-e2e/src/integration/app.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592199652380.2798
+            },
+            {
+              "file": "apps/shop-e2e/src/plugins/index.js",
+              "ext": ".js",
+              "mtime": 1592199652381.277
+            },
+            {
+              "file": "apps/shop-e2e/src/support/app.po.ts",
+              "ext": ".ts",
+              "mtime": 1592199652383.2715
+            },
+            {
+              "file": "apps/shop-e2e/src/support/commands.ts",
+              "ext": ".ts",
+              "mtime": 1592199652385.2664
+            },
+            {
+              "file": "apps/shop-e2e/src/support/index.ts",
+              "ext": ".ts",
+              "mtime": 1592199652386.2637
+            },
+            {
+              "file": "apps/shop-e2e/tsconfig.e2e.json",
+              "ext": ".json",
+              "mtime": 1592199652376.29
+            },
+            {
+              "file": "apps/shop-e2e/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592199652377.2878
+            },
+            {
+              "file": "apps/shop-e2e/tslint.json",
+              "ext": ".json",
+              "mtime": 1592199652373.2986
+            }
+          ]
+        }
+      },
+      "shop-ui": {
+        "name": "shop-ui",
+        "type": "lib",
+        "data": {
+          "projectType": "library",
+          "root": "libs/shop/ui",
+          "sourceRoot": "libs/shop/ui/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "libs/shop/ui/tsconfig.lib.json",
+                  "libs/shop/ui/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!libs/shop/ui/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/shop/ui/jest.config.js",
+                "tsConfig": "libs/shop/ui/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "libs/shop/ui/src/test-setup.ts"
+              }
+            }
+          },
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "libs/shop/ui/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592283579323.7996
+            },
+            {
+              "file": "libs/shop/ui/README.md",
+              "ext": ".md",
+              "mtime": 1592283579315.821
+            },
+            {
+              "file": "libs/shop/ui/src/index.ts",
+              "ext": ".ts",
+              "mtime": 1592283579319.8086
+            },
+            {
+              "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.html",
+              "ext": ".html",
+              "mtime": 1586042232624
+            },
+            {
+              "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.scss",
+              "ext": ".scss",
+              "mtime": 1592639241880.1401
+            },
+            {
+              "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1545093715140
+            },
+            {
+              "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
+              "ext": ".ts",
+              "mtime": 1593048199897.8738
+            },
+            {
+              "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
+              "ext": ".ts",
+              "mtime": 1592515695602.45
+            },
+            {
+              "file": "libs/shop/ui/src/lib/footer/footer.component.html",
+              "ext": ".html",
+              "mtime": 1592292329028.8218
+            },
+            {
+              "file": "libs/shop/ui/src/lib/footer/footer.component.scss",
+              "ext": ".scss",
+              "mtime": 1592293039751.5925
+            },
+            {
+              "file": "libs/shop/ui/src/lib/footer/footer.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285293365.382
+            },
+            {
+              "file": "libs/shop/ui/src/lib/footer/footer.component.ts",
+              "ext": ".ts",
+              "mtime": 1592285293366.3477
+            },
+            {
+              "file": "libs/shop/ui/src/lib/header/header.component.html",
+              "ext": ".html",
+              "mtime": 1592346948088.022
+            },
+            {
+              "file": "libs/shop/ui/src/lib/header/header.component.scss",
+              "ext": ".scss",
+              "mtime": 1592294309112.5286
+            },
+            {
+              "file": "libs/shop/ui/src/lib/header/header.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285165182.6013
+            },
+            {
+              "file": "libs/shop/ui/src/lib/header/header.component.ts",
+              "ext": ".ts",
+              "mtime": 1592293535403.393
+            },
+            {
+              "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592283579321.803
+            },
+            {
+              "file": "libs/shop/ui/src/lib/shop-ui.module.ts",
+              "ext": ".ts",
+              "mtime": 1592518409507.9832
+            },
+            {
+              "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.html",
+              "ext": ".html",
+              "mtime": 1592325106538.6538
+            },
+            {
+              "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.scss",
+              "ext": ".scss",
+              "mtime": 1592285228325.5913
+            },
+            {
+              "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592285228322.599
+            },
+            {
+              "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.ts",
+              "ext": ".ts",
+              "mtime": 1592293535394.371
+            },
+            {
+              "file": "libs/shop/ui/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592283579331.8057
+            },
+            {
+              "file": "libs/shop/ui/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592283579322.7998
+            },
+            {
+              "file": "libs/shop/ui/tsconfig.lib.json",
+              "ext": ".json",
+              "mtime": 1592283579316.8179
+            },
+            {
+              "file": "libs/shop/ui/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592283579330.792
+            },
+            {
+              "file": "libs/shop/ui/tslint.json",
+              "ext": ".json",
+              "mtime": 1592283579317.8274
+            }
+          ]
+        }
+      },
+      "shop": {
+        "name": "shop",
+        "type": "app",
+        "data": {
+          "projectType": "application",
+          "schematics": {
+            "@nrwl/angular:component": {
+              "style": "scss"
+            }
+          },
+          "root": "apps/shop",
+          "sourceRoot": "apps/shop/src",
+          "prefix": "ecommerce",
+          "architect": {
+            "build": {
+              "builder": "@angular-devkit/build-angular:browser",
+              "options": {
+                "outputPath": "dist/apps/shop",
+                "index": "apps/shop/src/index.html",
+                "main": "apps/shop/src/main.ts",
+                "polyfills": "apps/shop/src/polyfills.ts",
+                "tsConfig": "apps/shop/tsconfig.app.json",
+                "aot": true,
+                "assets": [
+                  "apps/shop/src/favicon.ico",
+                  "apps/shop/src/assets"
+                ],
+                "styles": [
+                  "apps/shop/src/styles.scss"
+                ],
+                "scripts": []
+              },
+              "configurations": {
+                "production": {
+                  "fileReplacements": [
+                    {
+                      "replace": "apps/shop/src/environments/environment.ts",
+                      "with": "apps/shop/src/environments/environment.prod.ts"
+                    }
+                  ],
+                  "optimization": true,
+                  "outputHashing": "all",
+                  "sourceMap": false,
+                  "extractCss": true,
+                  "namedChunks": false,
+                  "extractLicenses": true,
+                  "vendorChunk": false,
+                  "buildOptimizer": true,
+                  "budgets": [
+                    {
+                      "type": "initial",
+                      "maximumWarning": "2mb",
+                      "maximumError": "5mb"
+                    },
+                    {
+                      "type": "anyComponentStyle",
+                      "maximumWarning": "6kb",
+                      "maximumError": "10kb"
+                    }
+                  ]
+                }
+              }
+            },
+            "serve": {
+              "builder": "@angular-devkit/build-angular:dev-server",
+              "options": {
+                "browserTarget": "shop:build",
+                "proxyConfig": "apps/shop/proxy.conf.json"
+              },
+              "configurations": {
+                "production": {
+                  "browserTarget": "shop:build:production"
+                }
+              }
+            },
+            "extract-i18n": {
+              "builder": "@angular-devkit/build-angular:extract-i18n",
+              "options": {
+                "browserTarget": "shop:build"
+              }
+            },
+            "lint": {
+              "builder": "@angular-devkit/build-angular:tslint",
+              "options": {
+                "tsConfig": [
+                  "apps/shop/tsconfig.app.json",
+                  "apps/shop/tsconfig.spec.json"
+                ],
+                "exclude": [
+                  "**/node_modules/**",
+                  "!apps/shop/**"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "apps/shop/jest.config.js",
+                "tsConfig": "apps/shop/tsconfig.spec.json",
+                "passWithNoTests": true,
+                "setupFile": "apps/shop/src/test-setup.ts"
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/shop/browserslist",
+              "ext": "",
+              "mtime": 1592199652340.3872
+            },
+            {
+              "file": "apps/shop/jest.config.js",
+              "ext": ".js",
+              "mtime": 1592199652366.3171
+            },
+            {
+              "file": "apps/shop/proxy.conf.json",
+              "ext": ".json",
+              "mtime": 1592981250294.2117
+            },
+            {
+              "file": "apps/shop/src/app/app.component.html",
+              "ext": ".html",
+              "mtime": 1592292361514.329
+            },
+            {
+              "file": "apps/shop/src/app/app.component.scss",
+              "ext": ".scss",
+              "mtime": 1592289527716.9644
+            },
+            {
+              "file": "apps/shop/src/app/app.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1592199652362.328
+            },
+            {
+              "file": "apps/shop/src/app/app.component.ts",
+              "ext": ".ts",
+              "mtime": 1592199652363.3264
+            },
+            {
+              "file": "apps/shop/src/app/app.module.ts",
+              "ext": ".ts",
+              "mtime": 1593064541915.185
+            },
+            {
+              "file": "apps/shop/src/assets/.gitkeep",
+              "ext": "",
+              "mtime": 1592199652350.3599
+            },
+            {
+              "file": "apps/shop/src/assets/no-img.jpg",
+              "ext": ".jpg",
+              "mtime": 1590387264000
+            },
+            {
+              "file": "apps/shop/src/environments/environment.prod.ts",
+              "ext": ".ts",
+              "mtime": 1593034791930.2288
+            },
+            {
+              "file": "apps/shop/src/environments/environment.ts",
+              "ext": ".ts",
+              "mtime": 1592353731620.4043
+            },
+            {
+              "file": "apps/shop/src/favicon.ico",
+              "ext": ".ico",
+              "mtime": 1592199652339.389
+            },
+            {
+              "file": "apps/shop/src/index.html",
+              "ext": ".html",
+              "mtime": 1592199652344.377
+            },
+            {
+              "file": "apps/shop/src/main.ts",
+              "ext": ".ts",
+              "mtime": 1592199652345.3738
+            },
+            {
+              "file": "apps/shop/src/polyfills.ts",
+              "ext": ".ts",
+              "mtime": 1592199652347.3682
+            },
+            {
+              "file": "apps/shop/src/styles.scss",
+              "ext": ".scss",
+              "mtime": 1593031050441.6104
+            },
+            {
+              "file": "apps/shop/src/test-setup.ts",
+              "ext": ".ts",
+              "mtime": 1592199652372.3008
+            },
+            {
+              "file": "apps/shop/tsconfig.app.json",
+              "ext": ".json",
+              "mtime": 1592199652341.3843
+            },
+            {
+              "file": "apps/shop/tsconfig.json",
+              "ext": ".json",
+              "mtime": 1592199652337.3945
+            },
+            {
+              "file": "apps/shop/tsconfig.spec.json",
+              "ext": ".json",
+              "mtime": 1592199652370.3066
+            },
+            {
+              "file": "apps/shop/tslint.json",
+              "ext": ".json",
+              "mtime": 1592199652343.3794
+            }
+          ]
+        }
+      },
+      "@angular/animations": {
+        "type": "npm",
+        "name": "@angular/animations",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/cdk": {
+        "type": "npm",
+        "name": "@angular/cdk",
+        "data": {
+          "version": "^9.2.4",
+          "files": []
+        }
+      },
+      "@angular/common": {
+        "type": "npm",
+        "name": "@angular/common",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/compiler": {
+        "type": "npm",
+        "name": "@angular/compiler",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/core": {
+        "type": "npm",
+        "name": "@angular/core",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/flex-layout": {
+        "type": "npm",
+        "name": "@angular/flex-layout",
+        "data": {
+          "version": "^9.0.0-beta.29",
+          "files": []
+        }
+      },
+      "@angular/forms": {
+        "type": "npm",
+        "name": "@angular/forms",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/material": {
+        "type": "npm",
+        "name": "@angular/material",
+        "data": {
+          "version": "^9.2.4",
+          "files": []
+        }
+      },
+      "@angular/platform-browser": {
+        "type": "npm",
+        "name": "@angular/platform-browser",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/platform-browser-dynamic": {
+        "type": "npm",
+        "name": "@angular/platform-browser-dynamic",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/router": {
+        "type": "npm",
+        "name": "@angular/router",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@nestjs/common": {
+        "type": "npm",
+        "name": "@nestjs/common",
+        "data": {
+          "version": "^6.8.3",
+          "files": []
+        }
+      },
+      "@nestjs/core": {
+        "type": "npm",
+        "name": "@nestjs/core",
+        "data": {
+          "version": "^6.8.3",
+          "files": []
+        }
+      },
+      "@nestjs/jwt": {
+        "type": "npm",
+        "name": "@nestjs/jwt",
+        "data": {
+          "version": "latest",
+          "files": []
+        }
+      },
+      "@nestjs/passport": {
+        "type": "npm",
+        "name": "@nestjs/passport",
+        "data": {
+          "version": "^7.0.0",
+          "files": []
+        }
+      },
+      "@nestjs/platform-express": {
+        "type": "npm",
+        "name": "@nestjs/platform-express",
+        "data": {
+          "version": "^6.8.3",
+          "files": []
+        }
+      },
+      "@nestjs/serve-static": {
+        "type": "npm",
+        "name": "@nestjs/serve-static",
+        "data": {
+          "version": "^2.1.3",
+          "files": []
+        }
+      },
+      "@nestjs/typeorm": {
+        "type": "npm",
+        "name": "@nestjs/typeorm",
+        "data": {
+          "version": "^7.1.0",
+          "files": []
+        }
+      },
+      "@nrwl/angular": {
+        "type": "npm",
+        "name": "@nrwl/angular",
+        "data": {
+          "version": "^9.3.0",
+          "files": []
+        }
+      },
+      "ag-grid-angular": {
+        "type": "npm",
+        "name": "ag-grid-angular",
+        "data": {
+          "version": "^23.0.2",
+          "files": []
+        }
+      },
+      "ag-grid-community": {
+        "type": "npm",
+        "name": "ag-grid-community",
+        "data": {
+          "version": "^23.0.2",
+          "files": []
+        }
+      },
+      "bcryptjs": {
+        "type": "npm",
+        "name": "bcryptjs",
+        "data": {
+          "version": "^2.4.3",
+          "files": []
+        }
+      },
+      "class-transformer": {
+        "type": "npm",
+        "name": "class-transformer",
+        "data": {
+          "version": "^0.2.3",
+          "files": []
+        }
+      },
+      "class-validator": {
+        "type": "npm",
+        "name": "class-validator",
+        "data": {
+          "version": "^0.12.2",
+          "files": []
+        }
+      },
+      "core-js": {
+        "type": "npm",
+        "name": "core-js",
+        "data": {
+          "version": "^2.5.4",
+          "files": []
+        }
+      },
+      "mysql": {
+        "type": "npm",
+        "name": "mysql",
+        "data": {
+          "version": "^2.18.1",
+          "files": []
+        }
+      },
+      "passport": {
+        "type": "npm",
+        "name": "passport",
+        "data": {
+          "version": "^0.4.1",
+          "files": []
+        }
+      },
+      "passport-jwt": {
+        "type": "npm",
+        "name": "passport-jwt",
+        "data": {
+          "version": "^4.0.0",
+          "files": []
+        }
+      },
+      "passport-local": {
+        "type": "npm",
+        "name": "passport-local",
+        "data": {
+          "version": "^1.0.0",
+          "files": []
+        }
+      },
+      "reflect-metadata": {
+        "type": "npm",
+        "name": "reflect-metadata",
+        "data": {
+          "version": "^0.1.13",
+          "files": []
+        }
+      },
+      "rxjs": {
+        "type": "npm",
+        "name": "rxjs",
+        "data": {
+          "version": "~6.5.4",
+          "files": []
+        }
+      },
+      "segoe-fonts": {
+        "type": "npm",
+        "name": "segoe-fonts",
+        "data": {
+          "version": "1.0.1",
+          "files": []
+        }
+      },
+      "typeorm": {
+        "type": "npm",
+        "name": "typeorm",
+        "data": {
+          "version": "^0.2.25",
+          "files": []
+        }
+      },
+      "zone.js": {
+        "type": "npm",
+        "name": "zone.js",
+        "data": {
+          "version": "^0.10.2",
+          "files": []
+        }
+      },
+      "@angular-devkit/build-angular": {
+        "type": "npm",
+        "name": "@angular-devkit/build-angular",
+        "data": {
+          "version": "0.901.0",
+          "files": []
+        }
+      },
+      "@angular/cli": {
+        "type": "npm",
+        "name": "@angular/cli",
+        "data": {
+          "version": "9.1.0",
+          "files": []
+        }
+      },
+      "@angular/compiler-cli": {
+        "type": "npm",
+        "name": "@angular/compiler-cli",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@angular/language-service": {
+        "type": "npm",
+        "name": "@angular/language-service",
+        "data": {
+          "version": "^9.1.0",
+          "files": []
+        }
+      },
+      "@nestjs/schematics": {
+        "type": "npm",
+        "name": "@nestjs/schematics",
+        "data": {
+          "version": "^6.7.0",
+          "files": []
+        }
+      },
+      "@nestjs/testing": {
+        "type": "npm",
+        "name": "@nestjs/testing",
+        "data": {
+          "version": "^6.8.3",
+          "files": []
+        }
+      },
+      "@nrwl/cypress": {
+        "type": "npm",
+        "name": "@nrwl/cypress",
+        "data": {
+          "version": "9.3.0",
+          "files": []
+        }
+      },
+      "@nrwl/jest": {
+        "type": "npm",
+        "name": "@nrwl/jest",
+        "data": {
+          "version": "9.3.0",
+          "files": []
+        }
+      },
+      "@nrwl/nest": {
+        "type": "npm",
+        "name": "@nrwl/nest",
+        "data": {
+          "version": "9.3.0",
+          "files": []
+        }
+      },
+      "@nrwl/node": {
+        "type": "npm",
+        "name": "@nrwl/node",
+        "data": {
+          "version": "9.3.0",
+          "files": []
+        }
+      },
+      "@nrwl/workspace": {
+        "type": "npm",
+        "name": "@nrwl/workspace",
+        "data": {
+          "version": "9.3.0",
+          "files": []
+        }
+      },
+      "@types/bcryptjs": {
+        "type": "npm",
+        "name": "@types/bcryptjs",
+        "data": {
+          "version": "^2.4.2",
+          "files": []
+        }
+      },
+      "@types/jest": {
+        "type": "npm",
+        "name": "@types/jest",
+        "data": {
+          "version": "25.1.4",
+          "files": []
+        }
+      },
+      "@types/node": {
+        "type": "npm",
+        "name": "@types/node",
+        "data": {
+          "version": "~8.9.4",
+          "files": []
+        }
+      },
+      "@types/passport": {
+        "type": "npm",
+        "name": "@types/passport",
+        "data": {
+          "version": "^1.0.3",
+          "files": []
+        }
+      },
+      "@types/passport-jwt": {
+        "type": "npm",
+        "name": "@types/passport-jwt",
+        "data": {
+          "version": "^3.0.3",
+          "files": []
+        }
+      },
+      "@types/passport-local": {
+        "type": "npm",
+        "name": "@types/passport-local",
+        "data": {
+          "version": "^1.0.33",
+          "files": []
+        }
+      },
+      "codelyzer": {
+        "type": "npm",
+        "name": "codelyzer",
+        "data": {
+          "version": "~5.0.1",
+          "files": []
+        }
+      },
+      "cypress": {
+        "type": "npm",
+        "name": "cypress",
+        "data": {
+          "version": "^4.1.0",
+          "files": []
+        }
+      },
+      "dotenv": {
+        "type": "npm",
+        "name": "dotenv",
+        "data": {
+          "version": "6.2.0",
+          "files": []
+        }
+      },
+      "eslint": {
+        "type": "npm",
+        "name": "eslint",
+        "data": {
+          "version": "6.8.0",
+          "files": []
+        }
+      },
+      "jest": {
+        "type": "npm",
+        "name": "jest",
+        "data": {
+          "version": "25.2.3",
+          "files": []
+        }
+      },
+      "jest-preset-angular": {
+        "type": "npm",
+        "name": "jest-preset-angular",
+        "data": {
+          "version": "8.1.2",
+          "files": []
+        }
+      },
+      "prettier": {
+        "type": "npm",
+        "name": "prettier",
+        "data": {
+          "version": "2.0.4",
+          "files": []
+        }
+      },
+      "ts-jest": {
+        "type": "npm",
+        "name": "ts-jest",
+        "data": {
+          "version": "25.2.1",
+          "files": []
+        }
+      },
+      "ts-node": {
+        "type": "npm",
+        "name": "ts-node",
+        "data": {
+          "version": "~7.0.0",
+          "files": []
+        }
+      },
+      "tslint": {
+        "type": "npm",
+        "name": "tslint",
+        "data": {
+          "version": "~6.0.0",
+          "files": []
+        }
+      },
+      "typescript": {
+        "type": "npm",
+        "name": "typescript",
+        "data": {
+          "version": "~3.8.3",
+          "files": []
+        }
+      }
+    },
+    "dependencies": {
+      "shop-data-access": [
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "shop-share-dto"
+        },
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "shared-api"
+        },
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "rxjs"
+        },
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-data-access",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shared-material": [
+        {
+          "type": "static",
+          "source": "shared-material",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shared-material",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shared-material",
+          "target": "@angular/material"
+        },
+        {
+          "type": "static",
+          "source": "shared-material",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shared-security": [
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "shared-material"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "rxjs"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "@angular/forms"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "@angular/platform-browser"
+        },
+        {
+          "type": "static",
+          "source": "shared-security",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-share-dto": [
+        {
+          "type": "static",
+          "source": "shop-share-dto",
+          "target": "class-validator"
+        },
+        {
+          "type": "static",
+          "source": "shop-share-dto",
+          "target": "class-transformer"
+        },
+        {
+          "type": "static",
+          "source": "shop-share-dto",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-share-dto",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-share-dto",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-products": [
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "shop-data-access"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "shop-share-dto"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "shared-material"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shop-products",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-backend": [
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "shop-share-dto"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/testing"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/passport"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "typeorm"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/typeorm"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/serve-static"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/jwt"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "bcryptjs"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "passport-jwt"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "passport-local"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "class-validator"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "class-transformer"
+        },
+        {
+          "type": "static",
+          "source": "shop-backend",
+          "target": "@nestjs/core"
+        }
+      ],
+      "shop-layout": [
+        {
+          "type": "dynamic",
+          "source": "shop-layout",
+          "target": "shared-security"
+        },
+        {
+          "type": "static",
+          "source": "shop-layout",
+          "target": "shop-ui"
+        },
+        {
+          "type": "dynamic",
+          "source": "shop-layout",
+          "target": "shop-products"
+        },
+        {
+          "type": "dynamic",
+          "source": "shop-layout",
+          "target": "shop-admin"
+        },
+        {
+          "type": "static",
+          "source": "shop-layout",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-layout",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shop-layout",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-layout",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-utils": [
+        {
+          "type": "static",
+          "source": "shop-utils",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-utils",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-utils",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shared-api": [
+        {
+          "type": "static",
+          "source": "shared-api",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shared-api",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shared-api",
+          "target": "rxjs"
+        },
+        {
+          "type": "static",
+          "source": "shared-api",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-admin": [
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "shop-share-dto"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "shop-data-access"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "shop-ui"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "@angular/forms"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shop-admin",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop-e2e": [
+        {
+          "type": "implicit",
+          "source": "shop-e2e",
+          "target": "shop"
+        },
+        {
+          "type": "static",
+          "source": "shop-e2e",
+          "target": "@nrwl/cypress"
+        }
+      ],
+      "shop-ui": [
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "shop-utils"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "shop-admin"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "shared-material"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "ag-grid-community"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "rxjs"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "ag-grid-angular"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "@angular/common"
+        },
+        {
+          "type": "static",
+          "source": "shop-ui",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "shop": [
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "shared-material"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "shop-data-access"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "shared-security"
+        },
+        {
+          "type": "dynamic",
+          "source": "shop",
+          "target": "shop-layout"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "@angular/core"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "@angular/router"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "@angular/platform-browser"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "@angular/platform-browser-dynamic"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "zone.js"
+        },
+        {
+          "type": "static",
+          "source": "shop",
+          "target": "jest-preset-angular"
+        }
+      ],
+      "@angular/animations": [],
+      "@angular/cdk": [],
+      "@angular/common": [],
+      "@angular/compiler": [],
+      "@angular/core": [],
+      "@angular/flex-layout": [],
+      "@angular/forms": [],
+      "@angular/material": [],
+      "@angular/platform-browser": [],
+      "@angular/platform-browser-dynamic": [],
+      "@angular/router": [],
+      "@nestjs/common": [],
+      "@nestjs/core": [],
+      "@nestjs/jwt": [],
+      "@nestjs/passport": [],
+      "@nestjs/platform-express": [],
+      "@nestjs/serve-static": [],
+      "@nestjs/typeorm": [],
+      "@nrwl/angular": [],
+      "ag-grid-angular": [],
+      "ag-grid-community": [],
+      "bcryptjs": [],
+      "class-transformer": [],
+      "class-validator": [],
+      "core-js": [],
+      "mysql": [],
+      "passport": [],
+      "passport-jwt": [],
+      "passport-local": [],
+      "reflect-metadata": [],
+      "rxjs": [],
+      "segoe-fonts": [],
+      "typeorm": [],
+      "zone.js": [],
+      "@angular-devkit/build-angular": [],
+      "@angular/cli": [],
+      "@angular/compiler-cli": [],
+      "@angular/language-service": [],
+      "@nestjs/schematics": [],
+      "@nestjs/testing": [],
+      "@nrwl/cypress": [],
+      "@nrwl/jest": [],
+      "@nrwl/nest": [],
+      "@nrwl/node": [],
+      "@nrwl/workspace": [],
+      "@types/bcryptjs": [],
+      "@types/jest": [],
+      "@types/node": [],
+      "@types/passport": [],
+      "@types/passport-jwt": [],
+      "@types/passport-local": [],
+      "codelyzer": [],
+      "cypress": [],
+      "dotenv": [],
+      "eslint": [],
+      "jest": [],
+      "jest-preset-angular": [],
+      "prettier": [],
+      "ts-jest": [],
+      "ts-node": [],
+      "tslint": [],
+      "typescript": []
+    }
+  },
+  "fileMap": {
+    "shop-data-access": [
+      {
+        "file": "libs/shop/data-access/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592200085380.882
+      },
+      {
+        "file": "libs/shop/data-access/README.md",
+        "ext": ".md",
+        "mtime": 1592200085370.9087
+      },
+      {
+        "file": "libs/shop/data-access/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592517288470.5645
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/rest/product/product.service.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592354087667
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/rest/product/product.service.ts",
+        "ext": ".ts",
+        "mtime": 1592811811688.8281
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/rest/shop-rest.service.ts",
+        "ext": ".ts",
+        "mtime": 1592811983944.274
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/shop-data-access.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592200085377.8872
+      },
+      {
+        "file": "libs/shop/data-access/src/lib/shop-data-access.module.ts",
+        "ext": ".ts",
+        "mtime": 1592517288456.6611
+      },
+      {
+        "file": "libs/shop/data-access/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592200085388.8618
+      },
+      {
+        "file": "libs/shop/data-access/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592200085379.8838
+      },
+      {
+        "file": "libs/shop/data-access/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592200085371.9028
+      },
+      {
+        "file": "libs/shop/data-access/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592200085386.8645
+      },
+      {
+        "file": "libs/shop/data-access/tslint.json",
+        "ext": ".json",
+        "mtime": 1592200085373.9006
+      }
+    ],
+    "shared-material": [
+      {
+        "file": "libs/shared/material/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592199929388.0693
+      },
+      {
+        "file": "libs/shared/material/README.md",
+        "ext": ".md",
+        "mtime": 1592199929379.0935
+      },
+      {
+        "file": "libs/shared/material/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592199929383.1035
+      },
+      {
+        "file": "libs/shared/material/src/lib/shared-material.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592199929385.0745
+      },
+      {
+        "file": "libs/shared/material/src/lib/shared-material.module.ts",
+        "ext": ".ts",
+        "mtime": 1593021781700.0935
+      },
+      {
+        "file": "libs/shared/material/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592199929395.047
+      },
+      {
+        "file": "libs/shared/material/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592199929386.0725
+      },
+      {
+        "file": "libs/shared/material/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592199929381.0857
+      },
+      {
+        "file": "libs/shared/material/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592199929394.0508
+      },
+      {
+        "file": "libs/shared/material/tslint.json",
+        "ext": ".json",
+        "mtime": 1592199929382.1152
+      }
+    ],
+    "shared-security": [
+      {
+        "file": "libs/shared/security/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592285695562.2134
+      },
+      {
+        "file": "libs/shared/security/README.md",
+        "ext": ".md",
+        "mtime": 1592285695552.2402
+      },
+      {
+        "file": "libs/shared/security/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1593037770504.7256
+      },
+      {
+        "file": "libs/shared/security/src/lib/guards/auth.guard.ts",
+        "ext": ".ts",
+        "mtime": 1593037886684.257
+      },
+      {
+        "file": "libs/shared/security/src/lib/interceptors/error.interceptor.ts",
+        "ext": ".ts",
+        "mtime": 1593018935698.2559
+      },
+      {
+        "file": "libs/shared/security/src/lib/interceptors/jwt.interceptor.ts",
+        "ext": ".ts",
+        "mtime": 1593018935683.2307
+      },
+      {
+        "file": "libs/shared/security/src/lib/login/login.component.html",
+        "ext": ".html",
+        "mtime": 1593029834890.0503
+      },
+      {
+        "file": "libs/shared/security/src/lib/login/login.component.scss",
+        "ext": ".scss",
+        "mtime": 1593030587976.9646
+      },
+      {
+        "file": "libs/shared/security/src/lib/login/login.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285837306.5305
+      },
+      {
+        "file": "libs/shared/security/src/lib/login/login.component.ts",
+        "ext": ".ts",
+        "mtime": 1593030287595.4592
+      },
+      {
+        "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592931276924.8855
+      },
+      {
+        "file": "libs/shared/security/src/lib/services/authentication.service.ts",
+        "ext": ".ts",
+        "mtime": 1593033790136.1477
+      },
+      {
+        "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285695559.22
+      },
+      {
+        "file": "libs/shared/security/src/lib/shared-security.module.ts",
+        "ext": ".ts",
+        "mtime": 1592974152999.1726
+      },
+      {
+        "file": "libs/shared/security/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592285695570.2007
+      },
+      {
+        "file": "libs/shared/security/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592285695561.2146
+      },
+      {
+        "file": "libs/shared/security/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592285695554.234
+      },
+      {
+        "file": "libs/shared/security/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592285695568.2256
+      },
+      {
+        "file": "libs/shared/security/tslint.json",
+        "ext": ".json",
+        "mtime": 1592285695555.232
+      }
+    ],
+    "shop-share-dto": [
+      {
+        "file": "libs/shop/share/dto/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592444674004.891
+      },
+      {
+        "file": "libs/shop/share/dto/README.md",
+        "ext": ".md",
+        "mtime": 1592444673994.9163
+      },
+      {
+        "file": "libs/shop/share/dto/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592444960146.097
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/product/index.ts",
+        "ext": ".ts",
+        "mtime": 1592355726387
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/product/product.create.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592257576716
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/product/product.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592280154029
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/product/product.list.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592257576701
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/product/product.search.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592355726395
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/shop-share-dto.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592444674002.8972
+      },
+      {
+        "file": "libs/shop/share/dto/src/lib/shop-share-dto.module.ts",
+        "ext": ".ts",
+        "mtime": 1592444674001.8982
+      },
+      {
+        "file": "libs/shop/share/dto/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592444674007.8845
+      },
+      {
+        "file": "libs/shop/share/dto/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592444674003.8938
+      },
+      {
+        "file": "libs/shop/share/dto/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592444673996.912
+      },
+      {
+        "file": "libs/shop/share/dto/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592444674006.8865
+      },
+      {
+        "file": "libs/shop/share/dto/tslint.json",
+        "ext": ".json",
+        "mtime": 1592444673997.933
+      }
+    ],
+    "shop-products": [
+      {
+        "file": "libs/shop/products/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592199788792.3835
+      },
+      {
+        "file": "libs/shop/products/README.md",
+        "ext": ".md",
+        "mtime": 1592199788782.411
+      },
+      {
+        "file": "libs/shop/products/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592517288386.8281
+      },
+      {
+        "file": "libs/shop/products/src/lib/grid-products/grid-products.component.html",
+        "ext": ".html",
+        "mtime": 1592371541981.194
+      },
+      {
+        "file": "libs/shop/products/src/lib/grid-products/grid-products.component.scss",
+        "ext": ".scss",
+        "mtime": 1592814229494.963
+      },
+      {
+        "file": "libs/shop/products/src/lib/grid-products/grid-products.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592286072142.4734
+      },
+      {
+        "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
+        "ext": ".ts",
+        "mtime": 1592517288492.943
+      },
+      {
+        "file": "libs/shop/products/src/lib/product/product.component.html",
+        "ext": ".html",
+        "mtime": 1592814681249.567
+      },
+      {
+        "file": "libs/shop/products/src/lib/product/product.component.scss",
+        "ext": ".scss",
+        "mtime": 1593031416036.108
+      },
+      {
+        "file": "libs/shop/products/src/lib/product/product.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592286016422.3755
+      },
+      {
+        "file": "libs/shop/products/src/lib/product/product.component.ts",
+        "ext": ".ts",
+        "mtime": 1592372739009.3335
+      },
+      {
+        "file": "libs/shop/products/src/lib/shop-products.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592199788790.3909
+      },
+      {
+        "file": "libs/shop/products/src/lib/shop-products.module.ts",
+        "ext": ".ts",
+        "mtime": 1592544668552.6716
+      },
+      {
+        "file": "libs/shop/products/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592199788799.365
+      },
+      {
+        "file": "libs/shop/products/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592199788791.3877
+      },
+      {
+        "file": "libs/shop/products/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592199788784.4048
+      },
+      {
+        "file": "libs/shop/products/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592199788798.367
+      },
+      {
+        "file": "libs/shop/products/tslint.json",
+        "ext": ".json",
+        "mtime": 1592199788785.403
+      }
+    ],
+    "shop-backend": [
+      {
+        "file": "apps/shop-backend/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592200574739.734
+      },
+      {
+        "file": "apps/shop-backend/src/app/.gitkeep",
+        "ext": "",
+        "mtime": 1592200574734.746
+      },
+      {
+        "file": "apps/shop-backend/src/app/app.controller.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592200574742.7244
+      },
+      {
+        "file": "apps/shop-backend/src/app/app.controller.ts",
+        "ext": ".ts",
+        "mtime": 1593033771259.5488
+      },
+      {
+        "file": "apps/shop-backend/src/app/app.module.ts",
+        "ext": ".ts",
+        "mtime": 1593069820218.1133
+      },
+      {
+        "file": "apps/shop-backend/src/app/app.service.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592200574745.9868
+      },
+      {
+        "file": "apps/shop-backend/src/app/app.service.ts",
+        "ext": ".ts",
+        "mtime": 1592200574751.865
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/auth.module.ts",
+        "ext": ".ts",
+        "mtime": 1563744894000
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/auth.service.ts",
+        "ext": ".ts",
+        "mtime": 1563744894000
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/constants.ts",
+        "ext": ".ts",
+        "mtime": 1563744894000
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/index.ts",
+        "ext": ".ts",
+        "mtime": 1563744894000
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/jwt.strategy.ts",
+        "ext": ".ts",
+        "mtime": 1563744894000
+      },
+      {
+        "file": "apps/shop-backend/src/app/auth/local.strategy.ts",
+        "ext": ".ts",
+        "mtime": 1593029275801.052
+      },
+      {
+        "file": "apps/shop-backend/src/app/shop/entity/product.entity.ts",
+        "ext": ".ts",
+        "mtime": 1592265895684.0615
+      },
+      {
+        "file": "apps/shop-backend/src/app/shop/mapper.ts",
+        "ext": ".ts",
+        "mtime": 1593036902906.2742
+      },
+      {
+        "file": "apps/shop-backend/src/app/shop/shop.controller.ts",
+        "ext": ".ts",
+        "mtime": 1593036902919.2898
+      },
+      {
+        "file": "apps/shop-backend/src/app/shop/shop.module.ts",
+        "ext": ".ts",
+        "mtime": 1592264187215.6118
+      },
+      {
+        "file": "apps/shop-backend/src/app/shop/shop.service.ts",
+        "ext": ".ts",
+        "mtime": 1593036902913.22
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/dto/index.ts",
+        "ext": ".ts",
+        "mtime": 1592893055414.3667
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/dto/user.create.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592886409146.0908
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/dto/user.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592883982637.9492
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/dto/user.list.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592889455679.2075
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/dto/user.search.dto.ts",
+        "ext": ".ts",
+        "mtime": 1592893055444.2886
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/entity/user.entity.ts",
+        "ext": ".ts",
+        "mtime": 1592878718362.0278
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/index.ts",
+        "ext": ".ts",
+        "mtime": 1592893681656.0562
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/mapper.ts",
+        "ext": ".ts",
+        "mtime": 1592886409195.4695
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/user.controller.ts",
+        "ext": ".ts",
+        "mtime": 1592893681645.0857
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/users.module.ts",
+        "ext": ".ts",
+        "mtime": 1592893694555.952
+      },
+      {
+        "file": "apps/shop-backend/src/app/users/users.service.ts",
+        "ext": ".ts",
+        "mtime": 1592889455688.1838
+      },
+      {
+        "file": "apps/shop-backend/src/assets/.gitkeep",
+        "ext": "",
+        "mtime": 1592200574735.7427
+      },
+      {
+        "file": "apps/shop-backend/src/environments/environment.prod.ts",
+        "ext": ".ts",
+        "mtime": 1592200574737.7383
+      },
+      {
+        "file": "apps/shop-backend/src/environments/environment.ts",
+        "ext": ".ts",
+        "mtime": 1592200574738.7368
+      },
+      {
+        "file": "apps/shop-backend/src/main.ts",
+        "ext": ".ts",
+        "mtime": 1593069820197.1692
+      },
+      {
+        "file": "apps/shop-backend/src/shared/utils.ts",
+        "ext": ".ts",
+        "mtime": 1592287205483.8381
+      },
+      {
+        "file": "apps/shop-backend/tsconfig.app.json",
+        "ext": ".json",
+        "mtime": 1592200574730.7578
+      },
+      {
+        "file": "apps/shop-backend/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592200574731.755
+      },
+      {
+        "file": "apps/shop-backend/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592200574740.7307
+      },
+      {
+        "file": "apps/shop-backend/tslint.json",
+        "ext": ".json",
+        "mtime": 1592200574729.76
+      }
+    ],
+    "shop-layout": [
+      {
+        "file": "libs/shop/layout/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592283535576.8582
+      },
+      {
+        "file": "libs/shop/layout/README.md",
+        "ext": ".md",
+        "mtime": 1592283535567.8823
+      },
+      {
+        "file": "libs/shop/layout/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592283535572.8691
+      },
+      {
+        "file": "libs/shop/layout/src/lib/main/main.component.html",
+        "ext": ".html",
+        "mtime": 1592983125676.3027
+      },
+      {
+        "file": "libs/shop/layout/src/lib/main/main.component.scss",
+        "ext": ".scss",
+        "mtime": 1592346537225.5393
+      },
+      {
+        "file": "libs/shop/layout/src/lib/main/main.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285459827.7537
+      },
+      {
+        "file": "libs/shop/layout/src/lib/main/main.component.ts",
+        "ext": ".ts",
+        "mtime": 1592984123968.522
+      },
+      {
+        "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592283535574.8645
+      },
+      {
+        "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
+        "ext": ".ts",
+        "mtime": 1593037770493.755
+      },
+      {
+        "file": "libs/shop/layout/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592283535584.837
+      },
+      {
+        "file": "libs/shop/layout/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592283535575.8608
+      },
+      {
+        "file": "libs/shop/layout/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592283535569.878
+      },
+      {
+        "file": "libs/shop/layout/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592283535582.8413
+      },
+      {
+        "file": "libs/shop/layout/tslint.json",
+        "ext": ".json",
+        "mtime": 1592283535570.875
+      }
+    ],
+    "shop-utils": [
+      {
+        "file": "libs/shop/utils/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592200049907.5007
+      },
+      {
+        "file": "libs/shop/utils/README.md",
+        "ext": ".md",
+        "mtime": 1592200049893.552
+      },
+      {
+        "file": "libs/shop/utils/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592516036598.4165
+      },
+      {
+        "file": "libs/shop/utils/src/lib/shop-utils.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592200049905.5056
+      },
+      {
+        "file": "libs/shop/utils/src/lib/shop-utils.module.ts",
+        "ext": ".ts",
+        "mtime": 1592200049903.5479
+      },
+      {
+        "file": "libs/shop/utils/src/lib/types/index.ts",
+        "ext": ".ts",
+        "mtime": 1592516197831.6294
+      },
+      {
+        "file": "libs/shop/utils/src/lib/types/product-grid-def.ts",
+        "ext": ".ts",
+        "mtime": 1592516036621.2505
+      },
+      {
+        "file": "libs/shop/utils/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592200049909.495
+      },
+      {
+        "file": "libs/shop/utils/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592200049906.5034
+      },
+      {
+        "file": "libs/shop/utils/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592200049894.5378
+      },
+      {
+        "file": "libs/shop/utils/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592200049908.4983
+      },
+      {
+        "file": "libs/shop/utils/tslint.json",
+        "ext": ".json",
+        "mtime": 1592200049895.5334
+      }
+    ],
+    "shared-api": [
+      {
+        "file": "libs/shared/api/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592352719325.2307
+      },
+      {
+        "file": "libs/shared/api/README.md",
+        "ext": ".md",
+        "mtime": 1592352719314.2605
+      },
+      {
+        "file": "libs/shared/api/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592353396578.8855
+      },
+      {
+        "file": "libs/shared/api/src/lib/api.service.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592352841517.939
+      },
+      {
+        "file": "libs/shared/api/src/lib/api.service.ts",
+        "ext": ".ts",
+        "mtime": 1592811965592.3162
+      },
+      {
+        "file": "libs/shared/api/src/lib/shared-api.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592352719322.2388
+      },
+      {
+        "file": "libs/shared/api/src/lib/shared-api.module.ts",
+        "ext": ".ts",
+        "mtime": 1592352946648.1992
+      },
+      {
+        "file": "libs/shared/api/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592352719333.2107
+      },
+      {
+        "file": "libs/shared/api/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592352719324.2334
+      },
+      {
+        "file": "libs/shared/api/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592352719316.2551
+      },
+      {
+        "file": "libs/shared/api/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592352719331.215
+      },
+      {
+        "file": "libs/shared/api/tslint.json",
+        "ext": ".json",
+        "mtime": 1592352719318.2493
+      }
+    ],
+    "shop-admin": [
+      {
+        "file": "libs/shop/admin/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592440248251.1206
+      },
+      {
+        "file": "libs/shop/admin/README.md",
+        "ext": ".md",
+        "mtime": 1592440248236.2112
+      },
+      {
+        "file": "libs/shop/admin/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592440248246.1343
+      },
+      {
+        "file": "libs/shop/admin/src/lib/admin/admin.component.html",
+        "ext": ".html",
+        "mtime": 1593048388082.847
+      },
+      {
+        "file": "libs/shop/admin/src/lib/admin/admin.component.scss",
+        "ext": ".scss",
+        "mtime": 1592627891422.639
+      },
+      {
+        "file": "libs/shop/admin/src/lib/admin/admin.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592443479062.3823
+      },
+      {
+        "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
+        "ext": ".ts",
+        "mtime": 1593068369195.4797
+      },
+      {
+        "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
+        "ext": ".html",
+        "mtime": 1593045228634.7202
+      },
+      {
+        "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.scss",
+        "ext": ".scss",
+        "mtime": 1593030538540.2222
+      },
+      {
+        "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592286190919.7183
+      },
+      {
+        "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
+        "ext": ".ts",
+        "mtime": 1593048541955.142
+      },
+      {
+        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.html",
+        "ext": ".html",
+        "mtime": 1592803596217.9585
+      },
+      {
+        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.scss",
+        "ext": ".scss",
+        "mtime": 1593030706107.616
+      },
+      {
+        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592286415545.628
+      },
+      {
+        "file": "libs/shop/admin/src/lib/manage-products/manage-products.component.ts",
+        "ext": ".ts",
+        "mtime": 1593048467767.7888
+      },
+      {
+        "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592440248248.1277
+      },
+      {
+        "file": "libs/shop/admin/src/lib/shop-admin.module.ts",
+        "ext": ".ts",
+        "mtime": 1592596269815.4502
+      },
+      {
+        "file": "libs/shop/admin/src/lib/utils/item-action.enum.ts",
+        "ext": ".ts",
+        "mtime": 1592803596190.0337
+      },
+      {
+        "file": "libs/shop/admin/src/lib/utils/item-action.ts",
+        "ext": ".ts",
+        "mtime": 1592803596239.9001
+      },
+      {
+        "file": "libs/shop/admin/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592440248255.108
+      },
+      {
+        "file": "libs/shop/admin/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592440248249.1267
+      },
+      {
+        "file": "libs/shop/admin/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592440248243.1401
+      },
+      {
+        "file": "libs/shop/admin/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592440248253.114
+      },
+      {
+        "file": "libs/shop/admin/tslint.json",
+        "ext": ".json",
+        "mtime": 1592440248244.138
+      }
+    ],
+    "shop-e2e": [
+      {
+        "file": "apps/shop-e2e/cypress.json",
+        "ext": ".json",
+        "mtime": 1592199652374.2954
+      },
+      {
+        "file": "apps/shop-e2e/src/fixtures/example.json",
+        "ext": ".json",
+        "mtime": 1592199652378.2856
+      },
+      {
+        "file": "apps/shop-e2e/src/integration/app.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592199652380.2798
+      },
+      {
+        "file": "apps/shop-e2e/src/plugins/index.js",
+        "ext": ".js",
+        "mtime": 1592199652381.277
+      },
+      {
+        "file": "apps/shop-e2e/src/support/app.po.ts",
+        "ext": ".ts",
+        "mtime": 1592199652383.2715
+      },
+      {
+        "file": "apps/shop-e2e/src/support/commands.ts",
+        "ext": ".ts",
+        "mtime": 1592199652385.2664
+      },
+      {
+        "file": "apps/shop-e2e/src/support/index.ts",
+        "ext": ".ts",
+        "mtime": 1592199652386.2637
+      },
+      {
+        "file": "apps/shop-e2e/tsconfig.e2e.json",
+        "ext": ".json",
+        "mtime": 1592199652376.29
+      },
+      {
+        "file": "apps/shop-e2e/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592199652377.2878
+      },
+      {
+        "file": "apps/shop-e2e/tslint.json",
+        "ext": ".json",
+        "mtime": 1592199652373.2986
+      }
+    ],
+    "shop-ui": [
+      {
+        "file": "libs/shop/ui/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592283579323.7996
+      },
+      {
+        "file": "libs/shop/ui/README.md",
+        "ext": ".md",
+        "mtime": 1592283579315.821
+      },
+      {
+        "file": "libs/shop/ui/src/index.ts",
+        "ext": ".ts",
+        "mtime": 1592283579319.8086
+      },
+      {
+        "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.html",
+        "ext": ".html",
+        "mtime": 1586042232624
+      },
+      {
+        "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.scss",
+        "ext": ".scss",
+        "mtime": 1592639241880.1401
+      },
+      {
+        "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1545093715140
+      },
+      {
+        "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
+        "ext": ".ts",
+        "mtime": 1593048199897.8738
+      },
+      {
+        "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
+        "ext": ".ts",
+        "mtime": 1592515695602.45
+      },
+      {
+        "file": "libs/shop/ui/src/lib/footer/footer.component.html",
+        "ext": ".html",
+        "mtime": 1592292329028.8218
+      },
+      {
+        "file": "libs/shop/ui/src/lib/footer/footer.component.scss",
+        "ext": ".scss",
+        "mtime": 1592293039751.5925
+      },
+      {
+        "file": "libs/shop/ui/src/lib/footer/footer.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285293365.382
+      },
+      {
+        "file": "libs/shop/ui/src/lib/footer/footer.component.ts",
+        "ext": ".ts",
+        "mtime": 1592285293366.3477
+      },
+      {
+        "file": "libs/shop/ui/src/lib/header/header.component.html",
+        "ext": ".html",
+        "mtime": 1592346948088.022
+      },
+      {
+        "file": "libs/shop/ui/src/lib/header/header.component.scss",
+        "ext": ".scss",
+        "mtime": 1592294309112.5286
+      },
+      {
+        "file": "libs/shop/ui/src/lib/header/header.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285165182.6013
+      },
+      {
+        "file": "libs/shop/ui/src/lib/header/header.component.ts",
+        "ext": ".ts",
+        "mtime": 1592293535403.393
+      },
+      {
+        "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592283579321.803
+      },
+      {
+        "file": "libs/shop/ui/src/lib/shop-ui.module.ts",
+        "ext": ".ts",
+        "mtime": 1592518409507.9832
+      },
+      {
+        "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.html",
+        "ext": ".html",
+        "mtime": 1592325106538.6538
+      },
+      {
+        "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.scss",
+        "ext": ".scss",
+        "mtime": 1592285228325.5913
+      },
+      {
+        "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592285228322.599
+      },
+      {
+        "file": "libs/shop/ui/src/lib/toolbar/toolbar.component.ts",
+        "ext": ".ts",
+        "mtime": 1592293535394.371
+      },
+      {
+        "file": "libs/shop/ui/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592283579331.8057
+      },
+      {
+        "file": "libs/shop/ui/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592283579322.7998
+      },
+      {
+        "file": "libs/shop/ui/tsconfig.lib.json",
+        "ext": ".json",
+        "mtime": 1592283579316.8179
+      },
+      {
+        "file": "libs/shop/ui/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592283579330.792
+      },
+      {
+        "file": "libs/shop/ui/tslint.json",
+        "ext": ".json",
+        "mtime": 1592283579317.8274
+      }
+    ],
+    "shop": [
+      {
+        "file": "apps/shop/browserslist",
+        "ext": "",
+        "mtime": 1592199652340.3872
+      },
+      {
+        "file": "apps/shop/jest.config.js",
+        "ext": ".js",
+        "mtime": 1592199652366.3171
+      },
+      {
+        "file": "apps/shop/proxy.conf.json",
+        "ext": ".json",
+        "mtime": 1592981250294.2117
+      },
+      {
+        "file": "apps/shop/src/app/app.component.html",
+        "ext": ".html",
+        "mtime": 1592292361514.329
+      },
+      {
+        "file": "apps/shop/src/app/app.component.scss",
+        "ext": ".scss",
+        "mtime": 1592289527716.9644
+      },
+      {
+        "file": "apps/shop/src/app/app.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1592199652362.328
+      },
+      {
+        "file": "apps/shop/src/app/app.component.ts",
+        "ext": ".ts",
+        "mtime": 1592199652363.3264
+      },
+      {
+        "file": "apps/shop/src/app/app.module.ts",
+        "ext": ".ts",
+        "mtime": 1593064541915.185
+      },
+      {
+        "file": "apps/shop/src/assets/.gitkeep",
+        "ext": "",
+        "mtime": 1592199652350.3599
+      },
+      {
+        "file": "apps/shop/src/assets/no-img.jpg",
+        "ext": ".jpg",
+        "mtime": 1590387264000
+      },
+      {
+        "file": "apps/shop/src/environments/environment.prod.ts",
+        "ext": ".ts",
+        "mtime": 1593034791930.2288
+      },
+      {
+        "file": "apps/shop/src/environments/environment.ts",
+        "ext": ".ts",
+        "mtime": 1592353731620.4043
+      },
+      {
+        "file": "apps/shop/src/favicon.ico",
+        "ext": ".ico",
+        "mtime": 1592199652339.389
+      },
+      {
+        "file": "apps/shop/src/index.html",
+        "ext": ".html",
+        "mtime": 1592199652344.377
+      },
+      {
+        "file": "apps/shop/src/main.ts",
+        "ext": ".ts",
+        "mtime": 1592199652345.3738
+      },
+      {
+        "file": "apps/shop/src/polyfills.ts",
+        "ext": ".ts",
+        "mtime": 1592199652347.3682
+      },
+      {
+        "file": "apps/shop/src/styles.scss",
+        "ext": ".scss",
+        "mtime": 1593031050441.6104
+      },
+      {
+        "file": "apps/shop/src/test-setup.ts",
+        "ext": ".ts",
+        "mtime": 1592199652372.3008
+      },
+      {
+        "file": "apps/shop/tsconfig.app.json",
+        "ext": ".json",
+        "mtime": 1592199652341.3843
+      },
+      {
+        "file": "apps/shop/tsconfig.json",
+        "ext": ".json",
+        "mtime": 1592199652337.3945
+      },
+      {
+        "file": "apps/shop/tsconfig.spec.json",
+        "ext": ".json",
+        "mtime": 1592199652370.3066
+      },
+      {
+        "file": "apps/shop/tslint.json",
+        "ext": ".json",
+        "mtime": 1592199652343.3794
+      }
+    ]
+  }
+}
