@@ -15,21 +15,17 @@ export class MainComponent implements OnInit {
   opSelected: string;
 
   constructor(private router: Router, private authService: AuthenticationService) {
-    //this.buildOptions();
-    //this.router.initialNavigation();
     this.authService.currentUser.subscribe(next=> {
-      /*if(next) */this.buildOptions();
+      this.buildOptions();
     })
   }
 
   ngOnInit(): void {
-    //this.opSelected = this.options[0];
   }
 
   setOption(ev) {
     this.opSelected = ev;
     if(ev === 'Logout') this.authService.logout();
-    //this.router.navigateByUrl('/home/'+ ev.toLowerCase())
   }
 
   private buildOptions() {

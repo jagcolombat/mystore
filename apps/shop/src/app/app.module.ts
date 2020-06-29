@@ -14,9 +14,9 @@ import { errorInterceptorProvider, jwtInterceptorProvider } from '@ecommerce/sha
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
-      { path: 'home', loadChildren: () => import('@ecommerce/shop/layout')
+      { path: 'store', loadChildren: () => import('@ecommerce/shop/layout')
           .then(m => m.ShopLayoutModule)},
-      { path: '', pathMatch: 'full', redirectTo: 'home'},
+      { path: '', pathMatch: 'full', redirectTo: 'store'},
       { path: '**', redirectTo: ''}
     ], {
       paramsInheritanceStrategy: 'always',

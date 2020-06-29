@@ -56,7 +56,7 @@ export class ManageProductsComponent implements OnInit {
   }
 
   selProduct(selectedProds: any[]) {
-    console.log('selProduct', selectedProds);
+    //console.log('selProduct', selectedProds);
     this.selectedProds = selectedProds;
     /*if(selectedProds.length > 1){
       this.delBtnDisabled = false;
@@ -69,20 +69,12 @@ export class ManageProductsComponent implements OnInit {
   }
 
   deleteProd() {
-    console.log('deleteProd', this.selectedProds);
+    //console.log('deleteProd', this.selectedProds);
     this.evDelProd.emit(this.selectedProds[0]);
-    /*this.prodService.deleteProduct(this.selectedProds[0].id).subscribe(
-      next => {
-        console.log('deleted products', next);
-        //this.evDelProds.emit(this.selectedProds[0]);
-        this.addProd = { action: ItemActionEnum.DEL, item: this.selectedProds[0]};
-      },
-      error1 => console.error(error1)
-    );*/
   }
 
   editProd() {
-    console.log('editProd', this.selectedProds);
+    //console.log('editProd', this.selectedProds);
     this.evEditProd.emit(this.selectedProds);
   }
 }

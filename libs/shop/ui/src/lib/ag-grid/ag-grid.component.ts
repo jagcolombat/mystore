@@ -31,7 +31,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   ngOnChanges(sc: SimpleChanges){
-    console.log('change', sc);
+    //console.log('change', sc);
     if(sc.data && this.gridReady) this.updateItems();
     if(sc.item && this.gridReady) {
       //this.item.item.price = +this.item.item.price.toFixed(2);
@@ -57,7 +57,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   onGridReady(params){
-    console.log('on grid ready');
+    //console.log('on grid ready');
     this.gridReady = true;
     this.gridApi = params.api;
     if(this.data) this.updateItems(this.data);
@@ -81,21 +81,21 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   updateGridOptions(){
-    console.log('update grid options');
+    //console.log('update grid options');
     this.gridOptions = <GridOptions>{
       rowData: [],
       /*rowSelection: 'multiple',*/
       onGridReady: () => {
-        console.log('grid ready on update grid options');
+        //console.log('grid ready on update grid options');
         this.gridOptions.api.sizeColumnsToFit();
       },
       onRowSelected: (ev) => {
-        console.log('onRowSelected', ev);
+        //console.log('onRowSelected', ev);
         //this.invoiceService.invoiceProductSelected = this.gridOptions.api.getSelectedRows();
         this.evSelItem.emit(this.gridOptions.api.getSelectedRows());
       },
       onRowClicked: (ev) => {
-        console.log('onRowClicked', ev);
+        //console.log('onRowClicked', ev);
         //this.invoiceService.invoiceProductSelected = this.gridOptions.api.getSelectedRows();
         this.evSelItem.emit(this.gridOptions.api.getSelectedRows());
       },
@@ -122,7 +122,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   onAddRow(data) {
-    console.log('onAddRow', data, this.gridOptions.api.getDisplayedRowCount());
+    //console.log('onAddRow', data, this.gridOptions.api.getDisplayedRowCount());
     data.price = Number(data.price).toFixed(2);
     // Calculate totals
     if(this.footer && this.bottomData.length){
@@ -134,7 +134,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   onDeleteRow(data) {
-    console.log('onDeleteRow', data);
+    //console.log('onDeleteRow', data);
     // Calculate totals
     if(this.footer && this.bottomData.length) {
       this.items.splice(this.items.findIndex((v, i) => v.id === data.id), 1);
@@ -166,7 +166,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
     this.gridOptions.api.forEachNode(function(node) {
       rowData.push(node.data);
     });
-    console.log('Row Data:', rowData);
+    //console.log('Row Data:', rowData);
     return rowData;
   }
 
@@ -179,7 +179,7 @@ export class AgGridComponent implements OnChanges, OnInit, OnDestroy {
   updateItems(arrPO?: any[]) {
     this.clearData();
     this.data.map(data => {
-      console.log('updateItems', data);
+      //console.log('updateItems', data);
       this.onAddRow(data);
     });
   }

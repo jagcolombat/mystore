@@ -24,7 +24,7 @@ export class CartComponent implements OnInit {
   }
 
   updateItem(item: any) {
-    console.log('updateItem', item);
+    //console.log('updateItem', item);
     this.cartService.items.get(item.id).quantity = item.quantity;
     this.item = {action: ItemActionEnum.UPD, item: item};
   }
@@ -35,7 +35,7 @@ export class CartComponent implements OnInit {
   }
 
   editProd(prods: ProductDto[]) {
-    console.log('editProd', prods);
+    //console.log('editProd', prods);
     this.prod2Edit = prods[0];
   }
 

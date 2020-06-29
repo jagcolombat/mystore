@@ -23,7 +23,7 @@ export class QuantityComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(sc: SimpleChanges){
-    console.log('changes', sc);
+    //console.log('changes', sc);
     if(sc['prod2Edit'] && sc['prod2Edit'].currentValue) {
       this.form.patchValue({
           quantity: sc['prod2Edit'].currentValue.quantity
@@ -31,22 +31,22 @@ export class QuantityComponent implements OnInit, OnChanges {
       )
     }
     if(sc['error']) {
-      console.error(sc['error']);
+      //console.error(sc['error']);
       //if(sc['error']) this.formDirective.resetForm();
     }
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit', this.prod2Edit);
+    //console.log('ngOnInit', this.prod2Edit);
   }
 
   get f() { return this.form.controls; }
 
   onSubmit() {
-    console.log('form', this.f);
+    //console.log('form', this.f);
     this.submitted = true;
     if(this.form.valid){
-      console.log(this.prod2Edit)
+      //console.log(this.prod2Edit)
       this.updateProduct();
     }
   }

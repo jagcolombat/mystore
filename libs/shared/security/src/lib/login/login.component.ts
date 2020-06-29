@@ -28,12 +28,8 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
 
-    this.loginForm.statusChanges.subscribe(next => {
-      console.log('statusChanges', next, this.submitted)
-    })
-
     this.loginForm.valueChanges.subscribe(next => {
-      console.log('valueChanges', next, this.submitted)
+      //console.log('valueChanges', next, this.submitted)
       this.error = '';
     })
 
@@ -47,15 +43,13 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('form', this.loginForm);
+    //console.log('form', this.loginForm);
     this.submitted = true;
 
-    // stop here if form is invalid
     if (this.loginForm.invalid) {
       return;
     }
 
-    this.showSpinner = true;
     this.authService
       .login(this.f.username.value, this.f.password.value)
       .pipe(first())
@@ -66,8 +60,6 @@ export class LoginComponent implements OnInit {
         },
         error => {
           this.error = error;
-          console.log(error);
-          this.showSpinner = false;
         }
       );
   }

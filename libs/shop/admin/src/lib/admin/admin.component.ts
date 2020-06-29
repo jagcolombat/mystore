@@ -18,7 +18,7 @@ export class AdminComponent implements OnInit {
   constructor(private prodService: ProductService) {
     this.prodService.getProducts().subscribe(
       next => {
-        console.log('products', next);
+        //console.log('products', next);
         this.products = next.products;
       },
       error1 => console.error(error1)
@@ -29,9 +29,9 @@ export class AdminComponent implements OnInit {
   }
 
   addProduct(product: AddProductDto) {
-    console.log('addProduct', product);
+    //console.log('addProduct', product);
     this.prodService.saveProduct(product).subscribe(next => {
-      console.log('added product',next);
+      //console.log('added product',next);
       this.product = {action: ItemActionEnum.ADD, item: next};
       this.responseErr="";
     }, error1 => {
@@ -41,9 +41,9 @@ export class AdminComponent implements OnInit {
   }
 
   updateProduct(product: ProductDto) {
-    console.log('updateProduct', product);
+    //console.log('updateProduct', product);
     this.prodService.updateProduct(product).subscribe(next => {
-      console.log('updated product',next);
+      //console.log('updated product',next);
       this.product = {action: ItemActionEnum.UPD, item: next};
       this.responseErr="";
     }, error1 => {
@@ -55,7 +55,7 @@ export class AdminComponent implements OnInit {
   deleteProduct(product: ProductDto){
     this.prodService.deleteProduct(product.id).subscribe(
       next => {
-        console.log('deleted product', next);
+        //console.log('deleted product', next);
         this.product = { action: ItemActionEnum.DEL, item: product};
       },
       error1 => console.error(error1)
@@ -63,7 +63,7 @@ export class AdminComponent implements OnInit {
   }
 
   editProd(prods: ProductDto[]) {
-    console.log('editProd', prods);
+    //console.log('editProd', prods);
     this.prod2Edit = prods[0];
   }
 }

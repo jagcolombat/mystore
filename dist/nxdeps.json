@@ -277,7 +277,7 @@
             {
               "file": "libs/shared/security/src/lib/login/login.component.html",
               "ext": ".html",
-              "mtime": 1593029834890.0503
+              "mtime": 1593404969835.3525
             },
             {
               "file": "libs/shared/security/src/lib/login/login.component.scss",
@@ -292,7 +292,27 @@
             {
               "file": "libs/shared/security/src/lib/login/login.component.ts",
               "ext": ".ts",
-              "mtime": 1593030287595.4592
+              "mtime": 1593403503115.5479
+            },
+            {
+              "file": "libs/shared/security/src/lib/register/register.component.html",
+              "ext": ".html",
+              "mtime": 1593404969822.6726
+            },
+            {
+              "file": "libs/shared/security/src/lib/register/register.component.scss",
+              "ext": ".scss",
+              "mtime": 1593390859313.1245
+            },
+            {
+              "file": "libs/shared/security/src/lib/register/register.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593390859311.6758
+            },
+            {
+              "file": "libs/shared/security/src/lib/register/register.component.ts",
+              "ext": ".ts",
+              "mtime": 1593404493445.5696
             },
             {
               "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
@@ -305,6 +325,16 @@
               "mtime": 1593033790136.1477
             },
             {
+              "file": "libs/shared/security/src/lib/services/users.service.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593403506918.207
+            },
+            {
+              "file": "libs/shared/security/src/lib/services/users.service.ts",
+              "ext": ".ts",
+              "mtime": 1593404230174.0671
+            },
+            {
               "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
               "ext": ".ts",
               "mtime": 1592285695559.22
@@ -312,7 +342,12 @@
             {
               "file": "libs/shared/security/src/lib/shared-security.module.ts",
               "ext": ".ts",
-              "mtime": 1592974152999.1726
+              "mtime": 1593390859315.1577
+            },
+            {
+              "file": "libs/shared/security/src/lib/utils/validators/mustmatch.validator.ts",
+              "ext": ".ts",
+              "mtime": 1593403503136.4922
             },
             {
               "file": "libs/shared/security/src/test-setup.ts",
@@ -1630,7 +1665,7 @@
             {
               "file": "libs/shop/ui/src/lib/header/header.component.html",
               "ext": ".html",
-              "mtime": 1592346948088.022
+              "mtime": 1593405774273.9534
             },
             {
               "file": "libs/shop/ui/src/lib/header/header.component.scss",
@@ -3193,7 +3228,7 @@
       {
         "file": "libs/shared/security/src/lib/login/login.component.html",
         "ext": ".html",
-        "mtime": 1593029834890.0503
+        "mtime": 1593404969835.3525
       },
       {
         "file": "libs/shared/security/src/lib/login/login.component.scss",
@@ -3208,7 +3243,27 @@
       {
         "file": "libs/shared/security/src/lib/login/login.component.ts",
         "ext": ".ts",
-        "mtime": 1593030287595.4592
+        "mtime": 1593403503115.5479
+      },
+      {
+        "file": "libs/shared/security/src/lib/register/register.component.html",
+        "ext": ".html",
+        "mtime": 1593404969822.6726
+      },
+      {
+        "file": "libs/shared/security/src/lib/register/register.component.scss",
+        "ext": ".scss",
+        "mtime": 1593390859313.1245
+      },
+      {
+        "file": "libs/shared/security/src/lib/register/register.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593390859311.6758
+      },
+      {
+        "file": "libs/shared/security/src/lib/register/register.component.ts",
+        "ext": ".ts",
+        "mtime": 1593404493445.5696
       },
       {
         "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
@@ -3221,6 +3276,16 @@
         "mtime": 1593033790136.1477
       },
       {
+        "file": "libs/shared/security/src/lib/services/users.service.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593403506918.207
+      },
+      {
+        "file": "libs/shared/security/src/lib/services/users.service.ts",
+        "ext": ".ts",
+        "mtime": 1593404230174.0671
+      },
+      {
         "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
         "ext": ".ts",
         "mtime": 1592285695559.22
@@ -3228,7 +3293,12 @@
       {
         "file": "libs/shared/security/src/lib/shared-security.module.ts",
         "ext": ".ts",
-        "mtime": 1592974152999.1726
+        "mtime": 1593390859315.1577
+      },
+      {
+        "file": "libs/shared/security/src/lib/utils/validators/mustmatch.validator.ts",
+        "ext": ".ts",
+        "mtime": 1593403503136.4922
       },
       {
         "file": "libs/shared/security/src/test-setup.ts",
@@ -4128,7 +4198,7 @@
       {
         "file": "libs/shop/ui/src/lib/header/header.component.html",
         "ext": ".html",
-        "mtime": 1592346948088.022
+        "mtime": 1593405774273.9534
       },
       {
         "file": "libs/shop/ui/src/lib/header/header.component.scss",

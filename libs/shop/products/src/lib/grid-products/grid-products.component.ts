@@ -15,7 +15,7 @@ export class GridProductsComponent implements OnInit {
   constructor(private prodService: ProductService, private cartData: CartDataService) {
     this.prodService.getProducts().subscribe(
       next => {
-        console.log('products', next);
+        //console.log('products', next);
         this.products = next.products;
       },
         error1 => console.error(error1)
@@ -27,7 +27,7 @@ export class GridProductsComponent implements OnInit {
   }
 
   add2Cart(prod: ProductDto){
-    console.log('add2Cart', prod);
+    //console.log('add2Cart', prod);
     this.cartData.addItem(prod);
   }
 
