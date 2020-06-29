@@ -262,7 +262,7 @@
             {
               "file": "libs/shared/security/src/lib/guards/auth.guard.ts",
               "ext": ".ts",
-              "mtime": 1593037886684.257
+              "mtime": 1593411854910.1384
             },
             {
               "file": "libs/shared/security/src/lib/interceptors/error.interceptor.ts",
@@ -277,12 +277,12 @@
             {
               "file": "libs/shared/security/src/lib/login/login.component.html",
               "ext": ".html",
-              "mtime": 1593404969835.3525
+              "mtime": 1593411952296.7659
             },
             {
               "file": "libs/shared/security/src/lib/login/login.component.scss",
               "ext": ".scss",
-              "mtime": 1593030587976.9646
+              "mtime": 1593410898202.4812
             },
             {
               "file": "libs/shared/security/src/lib/login/login.component.spec.ts",
@@ -292,17 +292,17 @@
             {
               "file": "libs/shared/security/src/lib/login/login.component.ts",
               "ext": ".ts",
-              "mtime": 1593403503115.5479
+              "mtime": 1593411952283.8018
             },
             {
               "file": "libs/shared/security/src/lib/register/register.component.html",
               "ext": ".html",
-              "mtime": 1593404969822.6726
+              "mtime": 1593408927783.7224
             },
             {
               "file": "libs/shared/security/src/lib/register/register.component.scss",
               "ext": ".scss",
-              "mtime": 1593390859313.1245
+              "mtime": 1593410862959.6506
             },
             {
               "file": "libs/shared/security/src/lib/register/register.component.spec.ts",
@@ -312,7 +312,27 @@
             {
               "file": "libs/shared/security/src/lib/register/register.component.ts",
               "ext": ".ts",
-              "mtime": 1593404493445.5696
+              "mtime": 1593412457345.387
+            },
+            {
+              "file": "libs/shared/security/src/lib/security/security.component.html",
+              "ext": ".html",
+              "mtime": 1593407763896.2112
+            },
+            {
+              "file": "libs/shared/security/src/lib/security/security.component.scss",
+              "ext": ".scss",
+              "mtime": 1593408234246.3062
+            },
+            {
+              "file": "libs/shared/security/src/lib/security/security.component.spec.ts",
+              "ext": ".ts",
+              "mtime": 1593407498121.9358
+            },
+            {
+              "file": "libs/shared/security/src/lib/security/security.component.ts",
+              "ext": ".ts",
+              "mtime": 1593407498123.9307
             },
             {
               "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
@@ -332,7 +352,7 @@
             {
               "file": "libs/shared/security/src/lib/services/users.service.ts",
               "ext": ".ts",
-              "mtime": 1593404230174.0671
+              "mtime": 1593408840023.2993
             },
             {
               "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
@@ -342,12 +362,12 @@
             {
               "file": "libs/shared/security/src/lib/shared-security.module.ts",
               "ext": ".ts",
-              "mtime": 1593390859315.1577
+              "mtime": 1593407763910.1726
             },
             {
               "file": "libs/shared/security/src/lib/utils/validators/mustmatch.validator.ts",
               "ext": ".ts",
-              "mtime": 1593403503136.4922
+              "mtime": 1593409933995.435
             },
             {
               "file": "libs/shared/security/src/test-setup.ts",
@@ -562,7 +582,7 @@
             {
               "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
               "ext": ".ts",
-              "mtime": 1593082116695.8945
+              "mtime": 1593412457155.3628
             },
             {
               "file": "libs/shop/products/src/lib/product/product.component.html",
@@ -729,7 +749,7 @@
             {
               "file": "apps/shop-backend/src/app/auth/auth.service.ts",
               "ext": ".ts",
-              "mtime": 1563744894000
+              "mtime": 1593411854934.0728
             },
             {
               "file": "apps/shop-backend/src/app/auth/constants.ts",
@@ -951,7 +971,7 @@
             {
               "file": "libs/shop/layout/src/lib/main/main.component.ts",
               "ext": ".ts",
-              "mtime": 1593081206103.8884
+              "mtime": 1593411854986.9324
             },
             {
               "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
@@ -961,7 +981,7 @@
             {
               "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
               "ext": ".ts",
-              "mtime": 1593081277011.2383
+              "mtime": 1593407492163.8718
             },
             {
               "file": "libs/shop/layout/src/test-setup.ts",
@@ -1170,7 +1190,7 @@
             {
               "file": "libs/shared/api/src/lib/api.service.ts",
               "ext": ".ts",
-              "mtime": 1592811965592.3162
+              "mtime": 1593412457194.256
             },
             {
               "file": "libs/shared/api/src/lib/shared-api.module.spec.ts",
@@ -1282,7 +1302,7 @@
             {
               "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
               "ext": ".ts",
-              "mtime": 1593117378519.7144
+              "mtime": 1593412457232.3442
             },
             {
               "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
@@ -1302,7 +1322,7 @@
             {
               "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
               "ext": ".ts",
-              "mtime": 1593093079607.9387
+              "mtime": 1593412457213.2063
             },
             {
               "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
@@ -1414,7 +1434,7 @@
             {
               "file": "libs/shop/cart/src/lib/cart/cart.component.ts",
               "ext": ".ts",
-              "mtime": 1593117577006.6042
+              "mtime": 1593412457248.1118
             },
             {
               "file": "libs/shop/cart/src/lib/quantity/quantity.component.html",
@@ -1434,7 +1454,7 @@
             {
               "file": "libs/shop/cart/src/lib/quantity/quantity.component.ts",
               "ext": ".ts",
-              "mtime": 1593117743728.8286
+              "mtime": 1593412457324.9058
             },
             {
               "file": "libs/shop/cart/src/lib/shop-cart.module.spec.ts",
@@ -1635,7 +1655,7 @@
             {
               "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
               "ext": ".ts",
-              "mtime": 1593125463039.553
+              "mtime": 1593412457176.3064
             },
             {
               "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -1700,7 +1720,7 @@
             {
               "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
               "ext": ".ts",
-              "mtime": 1593125463028.5833
+              "mtime": 1593412457336.8723
             },
             {
               "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
@@ -1904,7 +1924,7 @@
             {
               "file": "apps/shop/src/app/app.module.ts",
               "ext": ".ts",
-              "mtime": 1593064541915.185
+              "mtime": 1593411519879.6287
             },
             {
               "file": "apps/shop/src/assets/.gitkeep",
@@ -3213,7 +3233,7 @@
       {
         "file": "libs/shared/security/src/lib/guards/auth.guard.ts",
         "ext": ".ts",
-        "mtime": 1593037886684.257
+        "mtime": 1593411854910.1384
       },
       {
         "file": "libs/shared/security/src/lib/interceptors/error.interceptor.ts",
@@ -3228,12 +3248,12 @@
       {
         "file": "libs/shared/security/src/lib/login/login.component.html",
         "ext": ".html",
-        "mtime": 1593404969835.3525
+        "mtime": 1593411952296.7659
       },
       {
         "file": "libs/shared/security/src/lib/login/login.component.scss",
         "ext": ".scss",
-        "mtime": 1593030587976.9646
+        "mtime": 1593410898202.4812
       },
       {
         "file": "libs/shared/security/src/lib/login/login.component.spec.ts",
@@ -3243,17 +3263,17 @@
       {
         "file": "libs/shared/security/src/lib/login/login.component.ts",
         "ext": ".ts",
-        "mtime": 1593403503115.5479
+        "mtime": 1593411952283.8018
       },
       {
         "file": "libs/shared/security/src/lib/register/register.component.html",
         "ext": ".html",
-        "mtime": 1593404969822.6726
+        "mtime": 1593408927783.7224
       },
       {
         "file": "libs/shared/security/src/lib/register/register.component.scss",
         "ext": ".scss",
-        "mtime": 1593390859313.1245
+        "mtime": 1593410862959.6506
       },
       {
         "file": "libs/shared/security/src/lib/register/register.component.spec.ts",
@@ -3263,7 +3283,27 @@
       {
         "file": "libs/shared/security/src/lib/register/register.component.ts",
         "ext": ".ts",
-        "mtime": 1593404493445.5696
+        "mtime": 1593412457345.387
+      },
+      {
+        "file": "libs/shared/security/src/lib/security/security.component.html",
+        "ext": ".html",
+        "mtime": 1593407763896.2112
+      },
+      {
+        "file": "libs/shared/security/src/lib/security/security.component.scss",
+        "ext": ".scss",
+        "mtime": 1593408234246.3062
+      },
+      {
+        "file": "libs/shared/security/src/lib/security/security.component.spec.ts",
+        "ext": ".ts",
+        "mtime": 1593407498121.9358
+      },
+      {
+        "file": "libs/shared/security/src/lib/security/security.component.ts",
+        "ext": ".ts",
+        "mtime": 1593407498123.9307
       },
       {
         "file": "libs/shared/security/src/lib/services/authentication.service.spec.ts",
@@ -3283,7 +3323,7 @@
       {
         "file": "libs/shared/security/src/lib/services/users.service.ts",
         "ext": ".ts",
-        "mtime": 1593404230174.0671
+        "mtime": 1593408840023.2993
       },
       {
         "file": "libs/shared/security/src/lib/shared-security.module.spec.ts",
@@ -3293,12 +3333,12 @@
       {
         "file": "libs/shared/security/src/lib/shared-security.module.ts",
         "ext": ".ts",
-        "mtime": 1593390859315.1577
+        "mtime": 1593407763910.1726
       },
       {
         "file": "libs/shared/security/src/lib/utils/validators/mustmatch.validator.ts",
         "ext": ".ts",
-        "mtime": 1593403503136.4922
+        "mtime": 1593409933995.435
       },
       {
         "file": "libs/shared/security/src/test-setup.ts",
@@ -3437,7 +3477,7 @@
       {
         "file": "libs/shop/products/src/lib/grid-products/grid-products.component.ts",
         "ext": ".ts",
-        "mtime": 1593082116695.8945
+        "mtime": 1593412457155.3628
       },
       {
         "file": "libs/shop/products/src/lib/product/product.component.html",
@@ -3539,7 +3579,7 @@
       {
         "file": "apps/shop-backend/src/app/auth/auth.service.ts",
         "ext": ".ts",
-        "mtime": 1563744894000
+        "mtime": 1593411854934.0728
       },
       {
         "file": "apps/shop-backend/src/app/auth/constants.ts",
@@ -3721,7 +3761,7 @@
       {
         "file": "libs/shop/layout/src/lib/main/main.component.ts",
         "ext": ".ts",
-        "mtime": 1593081206103.8884
+        "mtime": 1593411854986.9324
       },
       {
         "file": "libs/shop/layout/src/lib/shop-layout.module.spec.ts",
@@ -3731,7 +3771,7 @@
       {
         "file": "libs/shop/layout/src/lib/shop-layout.module.ts",
         "ext": ".ts",
-        "mtime": 1593081277011.2383
+        "mtime": 1593407492163.8718
       },
       {
         "file": "libs/shop/layout/src/test-setup.ts",
@@ -3860,7 +3900,7 @@
       {
         "file": "libs/shared/api/src/lib/api.service.ts",
         "ext": ".ts",
-        "mtime": 1592811965592.3162
+        "mtime": 1593412457194.256
       },
       {
         "file": "libs/shared/api/src/lib/shared-api.module.spec.ts",
@@ -3932,7 +3972,7 @@
       {
         "file": "libs/shop/admin/src/lib/admin/admin.component.ts",
         "ext": ".ts",
-        "mtime": 1593117378519.7144
+        "mtime": 1593412457232.3442
       },
       {
         "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.html",
@@ -3952,7 +3992,7 @@
       {
         "file": "libs/shop/admin/src/lib/cru-product/cru-product.component.ts",
         "ext": ".ts",
-        "mtime": 1593093079607.9387
+        "mtime": 1593412457213.2063
       },
       {
         "file": "libs/shop/admin/src/lib/shop-admin.module.spec.ts",
@@ -4024,7 +4064,7 @@
       {
         "file": "libs/shop/cart/src/lib/cart/cart.component.ts",
         "ext": ".ts",
-        "mtime": 1593117577006.6042
+        "mtime": 1593412457248.1118
       },
       {
         "file": "libs/shop/cart/src/lib/quantity/quantity.component.html",
@@ -4044,7 +4084,7 @@
       {
         "file": "libs/shop/cart/src/lib/quantity/quantity.component.ts",
         "ext": ".ts",
-        "mtime": 1593117743728.8286
+        "mtime": 1593412457324.9058
       },
       {
         "file": "libs/shop/cart/src/lib/shop-cart.module.spec.ts",
@@ -4168,7 +4208,7 @@
       {
         "file": "libs/shop/ui/src/lib/ag-grid/ag-grid.component.ts",
         "ext": ".ts",
-        "mtime": 1593125463039.553
+        "mtime": 1593412457176.3064
       },
       {
         "file": "libs/shop/ui/src/lib/ag-grid/custom-header.component.ts",
@@ -4233,7 +4273,7 @@
       {
         "file": "libs/shop/ui/src/lib/manage-products/manage-products.component.ts",
         "ext": ".ts",
-        "mtime": 1593125463028.5833
+        "mtime": 1593412457336.8723
       },
       {
         "file": "libs/shop/ui/src/lib/shop-ui.module.spec.ts",
@@ -4330,7 +4370,7 @@
       {
         "file": "apps/shop/src/app/app.module.ts",
         "ext": ".ts",
-        "mtime": 1593064541915.185
+        "mtime": 1593411519879.6287
       },
       {
         "file": "apps/shop/src/assets/.gitkeep",
