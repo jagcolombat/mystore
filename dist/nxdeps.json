@@ -1884,7 +1884,7 @@
             {
               "file": "apps/shop/src/environments/environment.prod.ts",
               "ext": ".ts",
-              "mtime": 1593034791930.2288
+              "mtime": 1593388619387.4507
             },
             {
               "file": "apps/shop/src/environments/environment.ts",
@@ -4275,7 +4275,7 @@
       {
         "file": "apps/shop/src/environments/environment.prod.ts",
         "ext": ".ts",
-        "mtime": 1593034791930.2288
+        "mtime": 1593388619387.4507
       },
       {
         "file": "apps/shop/src/environments/environment.ts",
